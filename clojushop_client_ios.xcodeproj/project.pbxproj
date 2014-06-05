@@ -1,0 +1,828 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9AB4D4AB0B8140FDB48C2672 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 534DB83434194207AEA77107 /* libPods.a */; };
+		EB2004E61934F360006F3832 /* CSSingleSelectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2004E51934F360006F3832 /* CSSingleSelectionController.m */; };
+		EB2004ED19350D44006F3832 /* CSCartQuantityItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2004EC19350D44006F3832 /* CSCartQuantityItem.m */; };
+		EB2004F11936683F006F3832 /* CSProductCD.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2004F01936683F006F3832 /* CSProductCD.m */; };
+		EB2004F41936690D006F3832 /* CSDataStoreLocal.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2004F31936690D006F3832 /* CSDataStoreLocal.m */; };
+		EB2004F719367667006F3832 /* CSDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2004F619367667006F3832 /* CSDataStore.m */; };
+		EB20050819375F1B006F3832 /* CSCurrencyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EB20050719375F1B006F3832 /* CSCurrencyManager.m */; };
+		EB20050B19376018006F3832 /* CSCurrency.m in Sources */ = {isa = PBXBuildFile; fileRef = EB20050A19376018006F3832 /* CSCurrency.m */; };
+		EB30C6631933FF730039388F /* CSDialogUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = EB30C6621933FF730039388F /* CSDialogUtils.m */; };
+		EB430B161931414F0012B27E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB430B151931414F0012B27E /* Foundation.framework */; };
+		EB430B181931414F0012B27E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB430B171931414F0012B27E /* CoreGraphics.framework */; };
+		EB430B1A1931414F0012B27E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB430B191931414F0012B27E /* UIKit.framework */; };
+		EB430B1C1931414F0012B27E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB430B1B1931414F0012B27E /* CoreData.framework */; };
+		EB430B221931414F0012B27E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB430B201931414F0012B27E /* InfoPlist.strings */; };
+		EB430B241931414F0012B27E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB430B231931414F0012B27E /* main.m */; };
+		EB430B281931414F0012B27E /* CSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB430B271931414F0012B27E /* CSAppDelegate.m */; };
+		EB430B2B1931414F0012B27E /* clojushop_client_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB430B291931414F0012B27E /* clojushop_client_ios.xcdatamodeld */; };
+		EB430B2D1931414F0012B27E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB430B2C1931414F0012B27E /* Images.xcassets */; };
+		EB430B341931414F0012B27E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB430B331931414F0012B27E /* XCTest.framework */; };
+		EB430B351931414F0012B27E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB430B151931414F0012B27E /* Foundation.framework */; };
+		EB430B361931414F0012B27E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB430B191931414F0012B27E /* UIKit.framework */; };
+		EB430B371931414F0012B27E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB430B1B1931414F0012B27E /* CoreData.framework */; };
+		EB430B3F1931414F0012B27E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB430B3D1931414F0012B27E /* InfoPlist.strings */; };
+		EB430B41193141500012B27E /* clojushop_client_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB430B40193141500012B27E /* clojushop_client_iosTests.m */; };
+		EB4CB59C1940ED9A0092457E /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4CB59B1940ED9A0092457E /* Product.swift */; };
+		EB6E2DB0193142F400ED6B18 /* CSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6E2D8E193142F400ED6B18 /* CSBaseViewController.m */; };
+		EB6E2DB1193142F400ED6B18 /* CSCartItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6E2D90193142F400ED6B18 /* CSCartItem.m */; };
+		EB6E2DB2193142F400ED6B18 /* CSCartItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6E2D92193142F400ED6B18 /* CSCartItemCell.m */; };
+		EB6E2DB3193142F400ED6B18 /* CSCartItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB6E2D93193142F400ED6B18 /* CSCartItemCell.xib */; };
+		EB6E2DB4193142F400ED6B18 /* CSCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6E2D95193142F400ED6B18 /* CSCartViewController.m */; };
+		EB6E2DB6193142F400ED6B18 /* CSDataStoreRemote.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6E2D98193142F400ED6B18 /* CSDataStoreRemote.m */; };
+		EB6E2DB7193142F400ED6B18 /* CSLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6E2D9A193142F400ED6B18 /* CSLoginRegisterViewController.m */; };
+		EB6E2DB8193142F400ED6B18 /* CSLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB6E2D9B193142F400ED6B18 /* CSLoginRegisterViewController.xib */; };
+		EB6E2DBA193142F400ED6B18 /* CSProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6E2D9F193142F400ED6B18 /* CSProductCell.m */; };
+		EB6E2DBB193142F400ED6B18 /* CSProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB6E2DA0193142F400ED6B18 /* CSProductCell.xib */; };
+		EB6E2DBC193142F400ED6B18 /* CSProductDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6E2DA2193142F400ED6B18 /* CSProductDetailsViewController.m */; };
+		EB6E2DBD193142F400ED6B18 /* CSProductDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB6E2DA3193142F400ED6B18 /* CSProductDetailsViewController.xib */; };
+		EB6E2DBE193142F400ED6B18 /* CSProductsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6E2DA5193142F400ED6B18 /* CSProductsListViewController.m */; };
+		EB6E2DBF193142F400ED6B18 /* CSProductsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB6E2DA6193142F400ED6B18 /* CSProductsListViewController.xib */; };
+		EB6E2DC0193142F400ED6B18 /* CSProgressIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6E2DA8193142F400ED6B18 /* CSProgressIndicator.m */; };
+		EB6E2DC1193142F400ED6B18 /* CSRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6E2DAA193142F400ED6B18 /* CSRegisterViewController.m */; };
+		EB6E2DC2193142F400ED6B18 /* CSRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB6E2DAB193142F400ED6B18 /* CSRegisterViewController.xib */; };
+		EB6E2DC3193142F400ED6B18 /* CSUserAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6E2DAE193142F400ED6B18 /* CSUserAccountViewController.m */; };
+		EB6E2DC4193142F400ED6B18 /* CSUserAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB6E2DAF193142F400ED6B18 /* CSUserAccountViewController.xib */; };
+		EB6E2DC6193144C700ED6B18 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB6E2DC5193144C700ED6B18 /* Config.plist */; };
+		EB93DEF11938CF2E00DBC33A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB93DEF01938CF2E00DBC33A /* QuartzCore.framework */; };
+		EB93DEF51938CF8300DBC33A /* CSPaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB93DEF41938CF8300DBC33A /* CSPaymentViewController.m */; };
+		EB93DEF71938D1D100DBC33A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB93DEF61938D1D100DBC33A /* Security.framework */; };
+		EB93DEFB1938D47400DBC33A /* CSPaymentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB93DEFA1938D47400DBC33A /* CSPaymentViewController.xib */; };
+		EB93DF4F193E51BE00DBC33A /* CSProductDetailsViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB93DF4E193E51BE00DBC33A /* CSProductDetailsViewController~ipad.xib */; };
+		EB93DF51193E51DE00DBC33A /* test.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB93DF50193E51DE00DBC33A /* test.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB430B381931414F0012B27E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB430B0A1931414F0012B27E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB430B111931414F0012B27E;
+			remoteInfo = clojushop_client_ios;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		534DB83434194207AEA77107 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C0CB28466B844BBA7A6AD8D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		EB2004E41934F360006F3832 /* CSSingleSelectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSSingleSelectionController.h; sourceTree = "<group>"; };
+		EB2004E51934F360006F3832 /* CSSingleSelectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSSingleSelectionController.m; sourceTree = "<group>"; };
+		EB2004EA19350CF3006F3832 /* CSSingleSelectionItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSSingleSelectionItem.h; sourceTree = "<group>"; };
+		EB2004EB19350D44006F3832 /* CSCartQuantityItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSCartQuantityItem.h; sourceTree = "<group>"; };
+		EB2004EC19350D44006F3832 /* CSCartQuantityItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSCartQuantityItem.m; sourceTree = "<group>"; };
+		EB2004EF1936683F006F3832 /* CSProductCD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSProductCD.h; sourceTree = "<group>"; };
+		EB2004F01936683F006F3832 /* CSProductCD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSProductCD.m; sourceTree = "<group>"; };
+		EB2004F21936690D006F3832 /* CSDataStoreLocal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSDataStoreLocal.h; sourceTree = "<group>"; };
+		EB2004F31936690D006F3832 /* CSDataStoreLocal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSDataStoreLocal.m; sourceTree = "<group>"; };
+		EB2004F519367667006F3832 /* CSDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSDataStore.h; sourceTree = "<group>"; };
+		EB2004F619367667006F3832 /* CSDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSDataStore.m; sourceTree = "<group>"; };
+		EB20050619375F1B006F3832 /* CSCurrencyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSCurrencyManager.h; sourceTree = "<group>"; };
+		EB20050719375F1B006F3832 /* CSCurrencyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSCurrencyManager.m; sourceTree = "<group>"; };
+		EB20050919376018006F3832 /* CSCurrency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSCurrency.h; sourceTree = "<group>"; };
+		EB20050A19376018006F3832 /* CSCurrency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSCurrency.m; sourceTree = "<group>"; };
+		EB30C6611933FF730039388F /* CSDialogUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSDialogUtils.h; sourceTree = "<group>"; };
+		EB30C6621933FF730039388F /* CSDialogUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSDialogUtils.m; sourceTree = "<group>"; };
+		EB430B121931414F0012B27E /* clojushop_client_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clojushop_client_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB430B151931414F0012B27E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EB430B171931414F0012B27E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EB430B191931414F0012B27E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EB430B1B1931414F0012B27E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		EB430B1F1931414F0012B27E /* clojushop_client_ios-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "clojushop_client_ios-Info.plist"; sourceTree = "<group>"; };
+		EB430B211931414F0012B27E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EB430B231931414F0012B27E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EB430B251931414F0012B27E /* clojushop_client_ios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "clojushop_client_ios-Prefix.pch"; sourceTree = "<group>"; };
+		EB430B261931414F0012B27E /* CSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSAppDelegate.h; sourceTree = "<group>"; };
+		EB430B271931414F0012B27E /* CSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSAppDelegate.m; sourceTree = "<group>"; };
+		EB430B2A1931414F0012B27E /* clojushop_client_ios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = clojushop_client_ios.xcdatamodel; sourceTree = "<group>"; };
+		EB430B2C1931414F0012B27E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EB430B321931414F0012B27E /* clojushop_client_iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = clojushop_client_iosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB430B331931414F0012B27E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EB430B3C1931414F0012B27E /* clojushop_client_iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "clojushop_client_iosTests-Info.plist"; sourceTree = "<group>"; };
+		EB430B3E1931414F0012B27E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EB430B40193141500012B27E /* clojushop_client_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = clojushop_client_iosTests.m; sourceTree = "<group>"; };
+		EB4CB59B1940ED9A0092457E /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		EB6E2D8D193142F400ED6B18 /* CSBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSBaseViewController.h; sourceTree = "<group>"; };
+		EB6E2D8E193142F400ED6B18 /* CSBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSBaseViewController.m; sourceTree = "<group>"; };
+		EB6E2D8F193142F400ED6B18 /* CSCartItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSCartItem.h; sourceTree = "<group>"; };
+		EB6E2D90193142F400ED6B18 /* CSCartItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSCartItem.m; sourceTree = "<group>"; };
+		EB6E2D91193142F400ED6B18 /* CSCartItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSCartItemCell.h; sourceTree = "<group>"; };
+		EB6E2D92193142F400ED6B18 /* CSCartItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSCartItemCell.m; sourceTree = "<group>"; };
+		EB6E2D93193142F400ED6B18 /* CSCartItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSCartItemCell.xib; sourceTree = "<group>"; };
+		EB6E2D94193142F400ED6B18 /* CSCartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSCartViewController.h; sourceTree = "<group>"; };
+		EB6E2D95193142F400ED6B18 /* CSCartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSCartViewController.m; sourceTree = "<group>"; };
+		EB6E2D97193142F400ED6B18 /* CSDataStoreRemote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSDataStoreRemote.h; sourceTree = "<group>"; };
+		EB6E2D98193142F400ED6B18 /* CSDataStoreRemote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSDataStoreRemote.m; sourceTree = "<group>"; };
+		EB6E2D99193142F400ED6B18 /* CSLoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLoginRegisterViewController.h; sourceTree = "<group>"; };
+		EB6E2D9A193142F400ED6B18 /* CSLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLoginRegisterViewController.m; sourceTree = "<group>"; };
+		EB6E2D9B193142F400ED6B18 /* CSLoginRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSLoginRegisterViewController.xib; sourceTree = "<group>"; };
+		EB6E2D9E193142F400ED6B18 /* CSProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSProductCell.h; sourceTree = "<group>"; };
+		EB6E2D9F193142F400ED6B18 /* CSProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSProductCell.m; sourceTree = "<group>"; };
+		EB6E2DA0193142F400ED6B18 /* CSProductCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSProductCell.xib; sourceTree = "<group>"; };
+		EB6E2DA1193142F400ED6B18 /* CSProductDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSProductDetailsViewController.h; sourceTree = "<group>"; };
+		EB6E2DA2193142F400ED6B18 /* CSProductDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSProductDetailsViewController.m; sourceTree = "<group>"; };
+		EB6E2DA3193142F400ED6B18 /* CSProductDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSProductDetailsViewController.xib; sourceTree = "<group>"; };
+		EB6E2DA4193142F400ED6B18 /* CSProductsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSProductsListViewController.h; sourceTree = "<group>"; };
+		EB6E2DA5193142F400ED6B18 /* CSProductsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSProductsListViewController.m; sourceTree = "<group>"; };
+		EB6E2DA6193142F400ED6B18 /* CSProductsListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSProductsListViewController.xib; sourceTree = "<group>"; };
+		EB6E2DA7193142F400ED6B18 /* CSProgressIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSProgressIndicator.h; sourceTree = "<group>"; };
+		EB6E2DA8193142F400ED6B18 /* CSProgressIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSProgressIndicator.m; sourceTree = "<group>"; };
+		EB6E2DA9193142F400ED6B18 /* CSRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRegisterViewController.h; sourceTree = "<group>"; };
+		EB6E2DAA193142F400ED6B18 /* CSRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRegisterViewController.m; sourceTree = "<group>"; };
+		EB6E2DAB193142F400ED6B18 /* CSRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSRegisterViewController.xib; sourceTree = "<group>"; };
+		EB6E2DAC193142F400ED6B18 /* CSStatusCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSStatusCodes.h; sourceTree = "<group>"; };
+		EB6E2DAD193142F400ED6B18 /* CSUserAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSUserAccountViewController.h; sourceTree = "<group>"; };
+		EB6E2DAE193142F400ED6B18 /* CSUserAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSUserAccountViewController.m; sourceTree = "<group>"; };
+		EB6E2DAF193142F400ED6B18 /* CSUserAccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSUserAccountViewController.xib; sourceTree = "<group>"; };
+		EB6E2DC5193144C700ED6B18 /* Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		EB9376941940EC40000CF780 /* clojushop_client_ios-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "clojushop_client_ios-Bridging-Header.h"; sourceTree = "<group>"; };
+		EB93DEF01938CF2E00DBC33A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EB93DEF31938CF8300DBC33A /* CSPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSPaymentViewController.h; sourceTree = "<group>"; };
+		EB93DEF41938CF8300DBC33A /* CSPaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSPaymentViewController.m; sourceTree = "<group>"; };
+		EB93DEF61938D1D100DBC33A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		EB93DEFA1938D47400DBC33A /* CSPaymentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSPaymentViewController.xib; sourceTree = "<group>"; };
+		EB93DF4E193E51BE00DBC33A /* CSProductDetailsViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CSProductDetailsViewController~ipad.xib"; sourceTree = "<group>"; };
+		EB93DF50193E51DE00DBC33A /* test.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = test.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB430B0F1931414F0012B27E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB93DEF71938D1D100DBC33A /* Security.framework in Frameworks */,
+				EB93DEF11938CF2E00DBC33A /* QuartzCore.framework in Frameworks */,
+				EB430B181931414F0012B27E /* CoreGraphics.framework in Frameworks */,
+				EB430B1C1931414F0012B27E /* CoreData.framework in Frameworks */,
+				EB430B1A1931414F0012B27E /* UIKit.framework in Frameworks */,
+				EB430B161931414F0012B27E /* Foundation.framework in Frameworks */,
+				9AB4D4AB0B8140FDB48C2672 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB430B2F1931414F0012B27E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB430B341931414F0012B27E /* XCTest.framework in Frameworks */,
+				EB430B371931414F0012B27E /* CoreData.framework in Frameworks */,
+				EB430B361931414F0012B27E /* UIKit.framework in Frameworks */,
+				EB430B351931414F0012B27E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB2004EE19366806006F3832 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				EB2004EF1936683F006F3832 /* CSProductCD.h */,
+				EB2004F01936683F006F3832 /* CSProductCD.m */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		EB20050C19377110006F3832 /* Currency */ = {
+			isa = PBXGroup;
+			children = (
+				EB20050619375F1B006F3832 /* CSCurrencyManager.h */,
+				EB20050719375F1B006F3832 /* CSCurrencyManager.m */,
+				EB20050919376018006F3832 /* CSCurrency.h */,
+				EB20050A19376018006F3832 /* CSCurrency.m */,
+			);
+			name = Currency;
+			sourceTree = "<group>";
+		};
+		EB30C6641933FF7F0039388F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EB30C6611933FF730039388F /* CSDialogUtils.h */,
+				EB30C6621933FF730039388F /* CSDialogUtils.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		EB30C6651934BA6C0039388F /* SingleSelection */ = {
+			isa = PBXGroup;
+			children = (
+				EB2004E41934F360006F3832 /* CSSingleSelectionController.h */,
+				EB2004E51934F360006F3832 /* CSSingleSelectionController.m */,
+				EB2004EA19350CF3006F3832 /* CSSingleSelectionItem.h */,
+			);
+			name = SingleSelection;
+			sourceTree = "<group>";
+		};
+		EB430B091931414F0012B27E = {
+			isa = PBXGroup;
+			children = (
+				EB430B1D1931414F0012B27E /* clojushop_client_ios */,
+				EB430B3A1931414F0012B27E /* clojushop_client_iosTests */,
+				EB430B141931414F0012B27E /* Frameworks */,
+				EB430B131931414F0012B27E /* Products */,
+				6C0CB28466B844BBA7A6AD8D /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		EB430B131931414F0012B27E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB430B121931414F0012B27E /* clojushop_client_ios.app */,
+				EB430B321931414F0012B27E /* clojushop_client_iosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB430B141931414F0012B27E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB93DEF61938D1D100DBC33A /* Security.framework */,
+				EB93DEF01938CF2E00DBC33A /* QuartzCore.framework */,
+				EB430B151931414F0012B27E /* Foundation.framework */,
+				EB430B171931414F0012B27E /* CoreGraphics.framework */,
+				EB430B191931414F0012B27E /* UIKit.framework */,
+				EB430B1B1931414F0012B27E /* CoreData.framework */,
+				EB430B331931414F0012B27E /* XCTest.framework */,
+				534DB83434194207AEA77107 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB430B1D1931414F0012B27E /* clojushop_client_ios */ = {
+			isa = PBXGroup;
+			children = (
+				EB93DEF21938CF6E00DBC33A /* Payment */,
+				EB20050C19377110006F3832 /* Currency */,
+				EB2004EE19366806006F3832 /* CoreData */,
+				EB30C6641933FF7F0039388F /* Utils */,
+				EB6E2DCE1931494A00ED6B18 /* UserAccount */,
+				EB6E2DCD1931490700ED6B18 /* DataStore */,
+				EB6E2DCC1931490200ED6B18 /* Register */,
+				EB6E2DCB193148FD00ED6B18 /* Login */,
+				EB6E2DCA1931485600ED6B18 /* VIews */,
+				EB6E2DC91931485000ED6B18 /* Cart */,
+				EB6E2DC81931484400ED6B18 /* ProductDetails */,
+				EB6E2DC71931482600ED6B18 /* ProductList */,
+				EB6E2D8D193142F400ED6B18 /* CSBaseViewController.h */,
+				EB6E2D8E193142F400ED6B18 /* CSBaseViewController.m */,
+				EB30C6651934BA6C0039388F /* SingleSelection */,
+				EB6E2DAC193142F400ED6B18 /* CSStatusCodes.h */,
+				EB430B261931414F0012B27E /* CSAppDelegate.h */,
+				EB430B271931414F0012B27E /* CSAppDelegate.m */,
+				EB430B2C1931414F0012B27E /* Images.xcassets */,
+				EB430B291931414F0012B27E /* clojushop_client_ios.xcdatamodeld */,
+				EB430B1E1931414F0012B27E /* Supporting Files */,
+				EB6E2DC5193144C700ED6B18 /* Config.plist */,
+				EB9376941940EC40000CF780 /* clojushop_client_ios-Bridging-Header.h */,
+			);
+			path = clojushop_client_ios;
+			sourceTree = "<group>";
+		};
+		EB430B1E1931414F0012B27E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB430B1F1931414F0012B27E /* clojushop_client_ios-Info.plist */,
+				EB430B201931414F0012B27E /* InfoPlist.strings */,
+				EB430B231931414F0012B27E /* main.m */,
+				EB430B251931414F0012B27E /* clojushop_client_ios-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB430B3A1931414F0012B27E /* clojushop_client_iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				EB430B40193141500012B27E /* clojushop_client_iosTests.m */,
+				EB430B3B1931414F0012B27E /* Supporting Files */,
+			);
+			path = clojushop_client_iosTests;
+			sourceTree = "<group>";
+		};
+		EB430B3B1931414F0012B27E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB430B3C1931414F0012B27E /* clojushop_client_iosTests-Info.plist */,
+				EB430B3D1931414F0012B27E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB6E2DC71931482600ED6B18 /* ProductList */ = {
+			isa = PBXGroup;
+			children = (
+				EB6E2D9E193142F400ED6B18 /* CSProductCell.h */,
+				EB6E2D9F193142F400ED6B18 /* CSProductCell.m */,
+				EB6E2DA0193142F400ED6B18 /* CSProductCell.xib */,
+				EB6E2DA4193142F400ED6B18 /* CSProductsListViewController.h */,
+				EB6E2DA5193142F400ED6B18 /* CSProductsListViewController.m */,
+				EB6E2DA6193142F400ED6B18 /* CSProductsListViewController.xib */,
+				EB4CB59B1940ED9A0092457E /* Product.swift */,
+			);
+			name = ProductList;
+			sourceTree = "<group>";
+		};
+		EB6E2DC81931484400ED6B18 /* ProductDetails */ = {
+			isa = PBXGroup;
+			children = (
+				EB6E2DA1193142F400ED6B18 /* CSProductDetailsViewController.h */,
+				EB6E2DA2193142F400ED6B18 /* CSProductDetailsViewController.m */,
+				EB93DF50193E51DE00DBC33A /* test.xib */,
+				EB6E2DA3193142F400ED6B18 /* CSProductDetailsViewController.xib */,
+				EB93DF4E193E51BE00DBC33A /* CSProductDetailsViewController~ipad.xib */,
+			);
+			name = ProductDetails;
+			sourceTree = "<group>";
+		};
+		EB6E2DC91931485000ED6B18 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				EB6E2D8F193142F400ED6B18 /* CSCartItem.h */,
+				EB6E2D90193142F400ED6B18 /* CSCartItem.m */,
+				EB2004EB19350D44006F3832 /* CSCartQuantityItem.h */,
+				EB2004EC19350D44006F3832 /* CSCartQuantityItem.m */,
+				EB6E2D91193142F400ED6B18 /* CSCartItemCell.h */,
+				EB6E2D92193142F400ED6B18 /* CSCartItemCell.m */,
+				EB6E2D93193142F400ED6B18 /* CSCartItemCell.xib */,
+				EB6E2D94193142F400ED6B18 /* CSCartViewController.h */,
+				EB6E2D95193142F400ED6B18 /* CSCartViewController.m */,
+			);
+			name = Cart;
+			sourceTree = "<group>";
+		};
+		EB6E2DCA1931485600ED6B18 /* VIews */ = {
+			isa = PBXGroup;
+			children = (
+				EB6E2DA7193142F400ED6B18 /* CSProgressIndicator.h */,
+				EB6E2DA8193142F400ED6B18 /* CSProgressIndicator.m */,
+			);
+			name = VIews;
+			sourceTree = "<group>";
+		};
+		EB6E2DCB193148FD00ED6B18 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EB6E2D99193142F400ED6B18 /* CSLoginRegisterViewController.h */,
+				EB6E2D9A193142F400ED6B18 /* CSLoginRegisterViewController.m */,
+				EB6E2D9B193142F400ED6B18 /* CSLoginRegisterViewController.xib */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		EB6E2DCC1931490200ED6B18 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				EB6E2DA9193142F400ED6B18 /* CSRegisterViewController.h */,
+				EB6E2DAA193142F400ED6B18 /* CSRegisterViewController.m */,
+				EB6E2DAB193142F400ED6B18 /* CSRegisterViewController.xib */,
+			);
+			name = Register;
+			sourceTree = "<group>";
+		};
+		EB6E2DCD1931490700ED6B18 /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+				EB6E2D97193142F400ED6B18 /* CSDataStoreRemote.h */,
+				EB6E2D98193142F400ED6B18 /* CSDataStoreRemote.m */,
+				EB2004F21936690D006F3832 /* CSDataStoreLocal.h */,
+				EB2004F31936690D006F3832 /* CSDataStoreLocal.m */,
+				EB2004F519367667006F3832 /* CSDataStore.h */,
+				EB2004F619367667006F3832 /* CSDataStore.m */,
+			);
+			name = DataStore;
+			sourceTree = "<group>";
+		};
+		EB6E2DCE1931494A00ED6B18 /* UserAccount */ = {
+			isa = PBXGroup;
+			children = (
+				EB6E2DAD193142F400ED6B18 /* CSUserAccountViewController.h */,
+				EB6E2DAE193142F400ED6B18 /* CSUserAccountViewController.m */,
+				EB6E2DAF193142F400ED6B18 /* CSUserAccountViewController.xib */,
+			);
+			name = UserAccount;
+			sourceTree = "<group>";
+		};
+		EB93DEF21938CF6E00DBC33A /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				EB93DEFA1938D47400DBC33A /* CSPaymentViewController.xib */,
+				EB93DEF31938CF8300DBC33A /* CSPaymentViewController.h */,
+				EB93DEF41938CF8300DBC33A /* CSPaymentViewController.m */,
+			);
+			name = Payment;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB430B111931414F0012B27E /* clojushop_client_ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB430B44193141500012B27E /* Build configuration list for PBXNativeTarget "clojushop_client_ios" */;
+			buildPhases = (
+				FDC255F91C754D91B2D37E79 /* Check Pods Manifest.lock */,
+				EB430B0E1931414F0012B27E /* Sources */,
+				EB430B0F1931414F0012B27E /* Frameworks */,
+				EB430B101931414F0012B27E /* Resources */,
+				C7958DA86BB94475A7A8A325 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = clojushop_client_ios;
+			productName = clojushop_client_ios;
+			productReference = EB430B121931414F0012B27E /* clojushop_client_ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB430B311931414F0012B27E /* clojushop_client_iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB430B47193141500012B27E /* Build configuration list for PBXNativeTarget "clojushop_client_iosTests" */;
+			buildPhases = (
+				EB430B2E1931414F0012B27E /* Sources */,
+				EB430B2F1931414F0012B27E /* Frameworks */,
+				EB430B301931414F0012B27E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB430B391931414F0012B27E /* PBXTargetDependency */,
+			);
+			name = clojushop_client_iosTests;
+			productName = clojushop_client_iosTests;
+			productReference = EB430B321931414F0012B27E /* clojushop_client_iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB430B0A1931414F0012B27E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CS;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = ivanschuetz;
+				TargetAttributes = {
+					EB430B311931414F0012B27E = {
+						TestTargetID = EB430B111931414F0012B27E;
+					};
+				};
+			};
+			buildConfigurationList = EB430B0D1931414F0012B27E /* Build configuration list for PBXProject "clojushop_client_ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EB430B091931414F0012B27E;
+			productRefGroup = EB430B131931414F0012B27E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB430B111931414F0012B27E /* clojushop_client_ios */,
+				EB430B311931414F0012B27E /* clojushop_client_iosTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB430B101931414F0012B27E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB6E2DBB193142F400ED6B18 /* CSProductCell.xib in Resources */,
+				EB6E2DB8193142F400ED6B18 /* CSLoginRegisterViewController.xib in Resources */,
+				EB6E2DB3193142F400ED6B18 /* CSCartItemCell.xib in Resources */,
+				EB93DF4F193E51BE00DBC33A /* CSProductDetailsViewController~ipad.xib in Resources */,
+				EB93DF51193E51DE00DBC33A /* test.xib in Resources */,
+				EB6E2DC6193144C700ED6B18 /* Config.plist in Resources */,
+				EB6E2DBF193142F400ED6B18 /* CSProductsListViewController.xib in Resources */,
+				EB430B221931414F0012B27E /* InfoPlist.strings in Resources */,
+				EB6E2DBD193142F400ED6B18 /* CSProductDetailsViewController.xib in Resources */,
+				EB6E2DC2193142F400ED6B18 /* CSRegisterViewController.xib in Resources */,
+				EB430B2D1931414F0012B27E /* Images.xcassets in Resources */,
+				EB6E2DC4193142F400ED6B18 /* CSUserAccountViewController.xib in Resources */,
+				EB93DEFB1938D47400DBC33A /* CSPaymentViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB430B301931414F0012B27E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB430B3F1931414F0012B27E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C7958DA86BB94475A7A8A325 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDC255F91C754D91B2D37E79 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB430B0E1931414F0012B27E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB6E2DB4193142F400ED6B18 /* CSCartViewController.m in Sources */,
+				EB6E2DBE193142F400ED6B18 /* CSProductsListViewController.m in Sources */,
+				EB2004E61934F360006F3832 /* CSSingleSelectionController.m in Sources */,
+				EB6E2DC1193142F400ED6B18 /* CSRegisterViewController.m in Sources */,
+				EB2004F41936690D006F3832 /* CSDataStoreLocal.m in Sources */,
+				EB430B281931414F0012B27E /* CSAppDelegate.m in Sources */,
+				EB20050819375F1B006F3832 /* CSCurrencyManager.m in Sources */,
+				EB6E2DB1193142F400ED6B18 /* CSCartItem.m in Sources */,
+				EB6E2DB0193142F400ED6B18 /* CSBaseViewController.m in Sources */,
+				EB430B241931414F0012B27E /* main.m in Sources */,
+				EB6E2DBC193142F400ED6B18 /* CSProductDetailsViewController.m in Sources */,
+				EB2004F11936683F006F3832 /* CSProductCD.m in Sources */,
+				EB6E2DC3193142F400ED6B18 /* CSUserAccountViewController.m in Sources */,
+				EB2004ED19350D44006F3832 /* CSCartQuantityItem.m in Sources */,
+				EB6E2DC0193142F400ED6B18 /* CSProgressIndicator.m in Sources */,
+				EB20050B19376018006F3832 /* CSCurrency.m in Sources */,
+				EB6E2DB2193142F400ED6B18 /* CSCartItemCell.m in Sources */,
+				EB6E2DB6193142F400ED6B18 /* CSDataStoreRemote.m in Sources */,
+				EB6E2DB7193142F400ED6B18 /* CSLoginRegisterViewController.m in Sources */,
+				EB2004F719367667006F3832 /* CSDataStore.m in Sources */,
+				EB30C6631933FF730039388F /* CSDialogUtils.m in Sources */,
+				EB6E2DBA193142F400ED6B18 /* CSProductCell.m in Sources */,
+				EB93DEF51938CF8300DBC33A /* CSPaymentViewController.m in Sources */,
+				EB430B2B1931414F0012B27E /* clojushop_client_ios.xcdatamodeld in Sources */,
+				EB4CB59C1940ED9A0092457E /* Product.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB430B2E1931414F0012B27E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB430B41193141500012B27E /* clojushop_client_iosTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB430B391931414F0012B27E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB430B111931414F0012B27E /* clojushop_client_ios */;
+			targetProxy = EB430B381931414F0012B27E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EB430B201931414F0012B27E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB430B211931414F0012B27E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EB430B3D1931414F0012B27E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB430B3E1931414F0012B27E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB430B42193141500012B27E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EB430B43193141500012B27E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB430B45193141500012B27E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C0CB28466B844BBA7A6AD8D /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "clojushop_client_ios/clojushop_client_ios-Prefix.pch";
+				INFOPLIST_FILE = "clojushop_client_ios/clojushop_client_ios-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "clojushop_client_ios/clojushop_client_ios-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EB430B46193141500012B27E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C0CB28466B844BBA7A6AD8D /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "clojushop_client_ios/clojushop_client_ios-Prefix.pch";
+				INFOPLIST_FILE = "clojushop_client_ios/clojushop_client_ios-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "clojushop_client_ios/clojushop_client_ios-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EB430B48193141500012B27E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/clojushop_client_ios.app/clojushop_client_ios";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "clojushop_client_ios/clojushop_client_ios-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "clojushop_client_iosTests/clojushop_client_iosTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EB430B49193141500012B27E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/clojushop_client_ios.app/clojushop_client_ios";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "clojushop_client_ios/clojushop_client_ios-Prefix.pch";
+				INFOPLIST_FILE = "clojushop_client_iosTests/clojushop_client_iosTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB430B0D1931414F0012B27E /* Build configuration list for PBXProject "clojushop_client_ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB430B42193141500012B27E /* Debug */,
+				EB430B43193141500012B27E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB430B44193141500012B27E /* Build configuration list for PBXNativeTarget "clojushop_client_ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB430B45193141500012B27E /* Debug */,
+				EB430B46193141500012B27E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB430B47193141500012B27E /* Build configuration list for PBXNativeTarget "clojushop_client_iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB430B48193141500012B27E /* Debug */,
+				EB430B49193141500012B27E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EB430B291931414F0012B27E /* clojushop_client_ios.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EB430B2A1931414F0012B27E /* clojushop_client_ios.xcdatamodel */,
+			);
+			currentVersion = EB430B2A1931414F0012B27E /* clojushop_client_ios.xcdatamodel */;
+			path = clojushop_client_ios.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EB430B0A1931414F0012B27E /* Project object */;
+}
