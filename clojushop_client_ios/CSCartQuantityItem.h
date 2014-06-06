@@ -8,13 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import "CSSingleSelectionItem.h"
-#import "CSCartItem.h"
+#import <clojushop_client_ios-Swift.h>
 
 @interface CSCartQuantityItem : NSObject <CSSingleSelectionItem>
 
 @property (nonatomic, strong) NSString *quantity;
 
-- initWithQuantity: (CSCartItem *)cartItem;
+- initWithQuantity: (CartItem *)cartItem;
 - (id)getWrappedItem;
 
 @end

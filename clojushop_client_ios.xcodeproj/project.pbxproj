@@ -33,7 +33,6 @@
 		EB430B41193141500012B27E /* clojushop_client_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB430B40193141500012B27E /* clojushop_client_iosTests.m */; };
 		EB4CB59C1940ED9A0092457E /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4CB59B1940ED9A0092457E /* Product.swift */; };
 		EB6E2DB0193142F400ED6B18 /* CSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6E2D8E193142F400ED6B18 /* CSBaseViewController.m */; };
-		EB6E2DB1193142F400ED6B18 /* CSCartItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6E2D90193142F400ED6B18 /* CSCartItem.m */; };
 		EB6E2DB2193142F400ED6B18 /* CSCartItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6E2D92193142F400ED6B18 /* CSCartItemCell.m */; };
 		EB6E2DB3193142F400ED6B18 /* CSCartItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB6E2D93193142F400ED6B18 /* CSCartItemCell.xib */; };
 		EB6E2DB4193142F400ED6B18 /* CSCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6E2D95193142F400ED6B18 /* CSCartViewController.m */; };
@@ -58,6 +57,7 @@
 		EB93DEFB1938D47400DBC33A /* CSPaymentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB93DEFA1938D47400DBC33A /* CSPaymentViewController.xib */; };
 		EB93DF4F193E51BE00DBC33A /* CSProductDetailsViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB93DF4E193E51BE00DBC33A /* CSProductDetailsViewController~ipad.xib */; };
 		EB93DF51193E51DE00DBC33A /* test.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB93DF50193E51DE00DBC33A /* test.xib */; };
+		EBD0B52E194232CE00E862C4 /* CartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD0B52D194232CE00E862C4 /* CartItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,8 +111,6 @@
 		EB4CB59B1940ED9A0092457E /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		EB6E2D8D193142F400ED6B18 /* CSBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSBaseViewController.h; sourceTree = "<group>"; };
 		EB6E2D8E193142F400ED6B18 /* CSBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSBaseViewController.m; sourceTree = "<group>"; };
-		EB6E2D8F193142F400ED6B18 /* CSCartItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSCartItem.h; sourceTree = "<group>"; };
-		EB6E2D90193142F400ED6B18 /* CSCartItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSCartItem.m; sourceTree = "<group>"; };
 		EB6E2D91193142F400ED6B18 /* CSCartItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSCartItemCell.h; sourceTree = "<group>"; };
 		EB6E2D92193142F400ED6B18 /* CSCartItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSCartItemCell.m; sourceTree = "<group>"; };
 		EB6E2D93193142F400ED6B18 /* CSCartItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSCartItemCell.xib; sourceTree = "<group>"; };
@@ -150,6 +148,7 @@
 		EB93DEFA1938D47400DBC33A /* CSPaymentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSPaymentViewController.xib; sourceTree = "<group>"; };
 		EB93DF4E193E51BE00DBC33A /* CSProductDetailsViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CSProductDetailsViewController~ipad.xib"; sourceTree = "<group>"; };
 		EB93DF50193E51DE00DBC33A /* test.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = test.xib; sourceTree = "<group>"; };
+		EBD0B52D194232CE00E862C4 /* CartItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -343,8 +342,6 @@
 		EB6E2DC91931485000ED6B18 /* Cart */ = {
 			isa = PBXGroup;
 			children = (
-				EB6E2D8F193142F400ED6B18 /* CSCartItem.h */,
-				EB6E2D90193142F400ED6B18 /* CSCartItem.m */,
 				EB2004EB19350D44006F3832 /* CSCartQuantityItem.h */,
 				EB2004EC19350D44006F3832 /* CSCartQuantityItem.m */,
 				EB6E2D91193142F400ED6B18 /* CSCartItemCell.h */,
@@ -352,6 +349,7 @@
 				EB6E2D93193142F400ED6B18 /* CSCartItemCell.xib */,
 				EB6E2D94193142F400ED6B18 /* CSCartViewController.h */,
 				EB6E2D95193142F400ED6B18 /* CSCartViewController.m */,
+				EBD0B52D194232CE00E862C4 /* CartItem.swift */,
 			);
 			name = Cart;
 			sourceTree = "<group>";
@@ -567,7 +565,6 @@
 				EB2004F41936690D006F3832 /* CSDataStoreLocal.m in Sources */,
 				EB430B281931414F0012B27E /* CSAppDelegate.m in Sources */,
 				EB20050819375F1B006F3832 /* CSCurrencyManager.m in Sources */,
-				EB6E2DB1193142F400ED6B18 /* CSCartItem.m in Sources */,
 				EB6E2DB0193142F400ED6B18 /* CSBaseViewController.m in Sources */,
 				EB430B241931414F0012B27E /* main.m in Sources */,
 				EB6E2DBC193142F400ED6B18 /* CSProductDetailsViewController.m in Sources */,
@@ -584,6 +581,7 @@
 				EB6E2DBA193142F400ED6B18 /* CSProductCell.m in Sources */,
 				EB93DEF51938CF8300DBC33A /* CSPaymentViewController.m in Sources */,
 				EB430B2B1931414F0012B27E /* clojushop_client_ios.xcdatamodeld in Sources */,
+				EBD0B52E194232CE00E862C4 /* CartItem.swift in Sources */,
 				EB4CB59C1940ED9A0092457E /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

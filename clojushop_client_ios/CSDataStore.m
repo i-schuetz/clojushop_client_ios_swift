@@ -9,8 +9,6 @@
 #import "AFHTTPRequestOperation.h"
 #import "AFHTTPRequestOperationManager.h"
 #import "CSDataStoreRemote.h"
-//#import "CSProduct.h"
-#import "CSCartItem.h"
 #import "CSDialogUtils.h"
 #import "CSDataStore.h"
 #import "CSDataStoreLocal.h"

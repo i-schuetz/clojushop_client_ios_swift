@@ -8,13 +8,13 @@
 
 #import "CSCartViewController.h"
 #import "CSDataStore.h"
-#import "CSCartItem.h"
 #import "CSCartItemCell.h"
 #import "CSCartQuantityItem.h"
 #import "CSCurrencyManager.h"
 #import "CSDialogUtils.h"
 #import "CSPaymentViewController.h"
 #import "UIImageView+AFNetworking.h"
+#import <clojushop_client_ios-Swift.h>
 
 @interface CSCartViewController ()
 
@@ -86,7 +86,7 @@
         //TODO server calculates this
         //TODO multiple currencies
         //for now we assume all the items have the same currency
-        NSString *currencyId = ((CSCartItem *)[items objectAtIndex:0]).currency;
+        NSString *currencyId = ((CartItem *)[items objectAtIndex:0]).currency;
         [totalView setText:
          [[CSCurrencyManager sharedCurrencyManager] getFormattedPrice: [self getTotalPrice:items].stringValue currencyId:currencyId]];
 
@@ -98,7 +98,7 @@
 
 - (NSNumber *)getTotalPrice:(NSArray *)cartItems {
     double total = 0;
-    for (CSCartItem *item in cartItems) {
+    for (CartItem *item in cartItems) {
         total += [item.price doubleValue] * item.quantity.intValue;
     }
     return [NSNumber numberWithDouble:total];
@@ -170,7 +170,7 @@
     
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
 
-    CSCartItem *item = [items objectAtIndex:[indexPath row]];
+    CartItem *item = [items objectAtIndex:[indexPath row]];
     
     [[cell productName] setText:[item name]];
     [[cell productDescr] setText:[item descr]];
@@ -195,9 +195,9 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         
-        CSCartItem *item = [items objectAtIndex:[indexPath row]];
+        CartItem *item = [items objectAtIndex:[indexPath row]];
         
-        [[CSDataStore sharedDataStore] removeFromCart:[item id_] successHandler:^{
+        [[CSDataStore sharedDataStore] removeFromCart:[item id] successHandler:^{
             [items removeObject:item];
             [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
 
@@ -209,7 +209,7 @@
 }
 
 - (void)setQuantity:(id)sender atIndexPath:(NSIndexPath *)ip {
-    CSCartItem *selectedCartItem = [items objectAtIndex:ip.row];
+    CartItem *selectedCartItem = [items objectAtIndex:ip.row];
     
     
     //for now dummy quantities, our products don't have stock yet...
@@ -239,12 +239,12 @@
 
 
 -(void)selectedItem:(id<CSSingleSelectionItem>)item baseObject:(id)baseObject {
-    CSCartItem *cartItem = baseObject;
+    CartItem *cartItem = baseObject;
     NSString *quantity = [item getWrappedItem];
     
     [self setProgressHidden:NO transparent:YES];
     
-    [[CSDataStore sharedDataStore] setCartQuantity: cartItem.id_ quantity:quantity successHandler:^{
+    [[CSDataStore sharedDataStore] setCartQuantity: cartItem.id quantity:quantity successHandler:^{
         cartItem.quantity = quantity; //TODO server should send updated quantity back
         [[self tableView] reloadData];
 

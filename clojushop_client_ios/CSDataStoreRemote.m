@@ -10,7 +10,6 @@
 #import "AFHTTPRequestOperationManager.h"
 #import "CSDataStoreRemote.h"
 #import <clojushop_client_ios-Swift.h>
-#import "CSCartItem.h"
 #import "CSDialogUtils.h"
 
 
@@ -331,7 +330,8 @@
             
             NSMutableArray *items = [[NSMutableArray alloc] init];
             for (id itemJSON in itemsJSON) {
-                CSCartItem *c = [CSCartItem createFromDict:itemJSON];
+//                CartItem *c = [CartItem initWithDict:itemJSON];
+                CartItem *c = [CartItem initWithDictHelper:itemJSON];
                 if (c != nil) {
                     [items addObject:c];
                 }

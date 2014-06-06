@@ -7,7 +7,7 @@
 //
 
 #import "CSCartQuantityItem.h"
-#import "CSCartItem.h"
+#import <clojushop_client_ios-Swift.h>
 
 @implementation CSCartQuantityItem
 
