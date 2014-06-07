@@ -8,12 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "STPView.h"
-#import "CSCurrency.h"
+#import <clojushop_client_ios-Swift.h>
 
 @interface CSPaymentViewController : UIViewController<STPViewDelegate>
 
 @property STPView *checkoutView;
-@property CSCurrency *currency;
+@property Currency *currency;
 @property NSNumber *totalValue;
 
 @end

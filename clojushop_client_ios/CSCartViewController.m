@@ -23,7 +23,7 @@
 @implementation CSCartViewController {
     NSMutableArray *items;
     BOOL showingController; //quickfix to avoid reloading when coming back from quantity controller... needs correct implementation
-    CSCurrency *userCurrency;
+    Currency *currency;
 }
 
 @synthesize emptyCartView;

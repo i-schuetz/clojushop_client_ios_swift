@@ -9,7 +9,6 @@
 #import "CSProductsListViewController.h"
 #import "AFHTTPRequestOperation.h"
 #import "AFHTTPRequestOperationManager.h"
-#import "CSProductCell.h"
 #import "CSProductDetailsViewController.h"
 #import "CSDataStore.h"
 #import "CSCurrencyManager.h"
@@ -84,7 +83,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"CSProductCell";
-    CSProductCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    ProductCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 
     Product *product = [products objectAtIndex:[indexPath row]];
     

@@ -7,7 +7,7 @@
 //
 
 #import "CSCurrencyManager.h"
-#import "CSCurrency.h"
+#import <clojushop_client_ios-Swift.h>
 
 @implementation CSCurrencyManager {
     NSDictionary *currencyMap;
@@ -19,8 +19,8 @@
         
         //for now this is in the client. At some point server can send it to us in e.g. an initialisation block.
         currencyMap = @{
-                        @"1": [[CSCurrency alloc] initWithId:1 format:@"%@ €"],
-                        @"2":[[CSCurrency alloc] initWithId:2 format:@"$ %@"]
+                        @"1": [Currency initHelper:1 format:@"%@ €"],
+                        @"2": [Currency initHelper:2 format:@"$ %@"]
         };
     }
     return self;
