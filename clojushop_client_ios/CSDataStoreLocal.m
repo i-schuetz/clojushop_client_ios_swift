@@ -7,8 +7,6 @@
 //
 
 #import "CSDataStoreLocal.h"
-#import "CSProductCD.h"
-//#import "CSProduct.h"
 #import <clojushop_client_ios-Swift.h>
 
 @implementation CSDataStoreLocal {
@@ -72,7 +70,7 @@
 - (void)getProducts: (int) start size: (int) size successHandler: (void (^)(NSArray *products)) successHandler failureHandler: (void (^)()) failureHandler {
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     
-    NSEntityDescription *entityDescription = [[model entitiesByName] objectForKey:@"CSProductCD"];
+    NSEntityDescription *entityDescription = [[model entitiesByName] objectForKey:@"ProductCD"];
     [request setEntity:entityDescription];
     
     NSSortDescriptor *sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"ordering" ascending:YES];
@@ -91,7 +89,7 @@
 
 - (void)clearProducts {
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
-    [request setEntity:[NSEntityDescription entityForName:@"CSProductCD" inManagedObjectContext:context]];
+    [request setEntity:[NSEntityDescription entityForName:@"ProductCD" inManagedObjectContext:context]];
     NSArray * result = [context executeFetchRequest:request error:nil];
     for (id productCD in result) {
         [context deleteObject:productCD];
@@ -101,23 +99,24 @@
 - (void)saveProducts: (NSArray *)products {
     for (int i = 0; i < products.count; i++) {
         Product *product = [products objectAtIndex:i];
-        [self saveProduct:product ordering:i + 1];
+        [self saveProduct:product ordering: i + 1];
     }
     
     [self saveChanges];
 }
 
 - (void)saveProduct: (Product *)product ordering:(double)ordering {
-    CSProductCD *productCD = [NSEntityDescription insertNewObjectForEntityForName:@"CSProductCD" inManagedObjectContext:context];
-    productCD.id = product.id;
-    productCD.name = product.name;
-    productCD.descr = product.descr;
-    productCD.price = product.price;
-    productCD.currency = product.currency;
-    productCD.seller = product.seller;
-    productCD.img_pl = product.imgList;
-    productCD.img_pd = product.imgDetails;
-    productCD.ordering = ordering;
+    //Temporarily disabled due to compatibility issue trying to pass ordering to Swift
+//    ProductCD *productCD = [NSEntityDescription insertNewObjectForEntityForName:@"ProductCD" inManagedObjectContext:context];
+//    productCD.id = product.id;
+//    productCD.name = product.name;
+//    productCD.descr = product.descr;
+//    productCD.price = product.price;
+//    productCD.currency = product.currency;
+//    productCD.seller = product.seller;
+//    productCD.img_pl = product.imgList;
+//    productCD.img_pd = product.imgDetails;
+//    productCD.ordering = ordering;
 }
 
 

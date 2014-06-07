@@ -56,7 +56,7 @@ class Product {
     }
     
     
-    class func createFromCD (productCD: CSProductCD) -> Product {
+    class func createFromCD (productCD: ProductCD) -> Product {
         let product = Product(
             id: productCD.id,
             name: productCD.name,
@@ -84,7 +84,7 @@ class Product {
         var productsArray:Product[] = []
         
         for productCD: AnyObject in productCDs {
-            productsArray += self.createFromCD(productCD as CSProductCD)
+            productsArray += self.createFromCD(productCD as ProductCD)
         }
         return productsArray
     }
