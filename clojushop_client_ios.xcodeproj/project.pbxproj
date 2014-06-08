@@ -48,7 +48,6 @@
 		EB93DEF71938D1D100DBC33A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB93DEF61938D1D100DBC33A /* Security.framework */; };
 		EB93DEFB1938D47400DBC33A /* CSPaymentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB93DEFA1938D47400DBC33A /* CSPaymentViewController.xib */; };
 		EB93DF4F193E51BE00DBC33A /* CSProductDetailsViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB93DF4E193E51BE00DBC33A /* CSProductDetailsViewController~ipad.xib */; };
-		EB93DF51193E51DE00DBC33A /* test.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB93DF50193E51DE00DBC33A /* test.xib */; };
 		EBD0B52E194232CE00E862C4 /* CartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD0B52D194232CE00E862C4 /* CartItem.swift */; };
 		EBD0B5301942558A00E862C4 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD0B52F1942558A00E862C4 /* Currency.swift */; };
 		EBD0B532194257F800E862C4 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD0B531194257F800E862C4 /* ProductCell.swift */; };
@@ -138,7 +137,6 @@
 		EB93DEF61938D1D100DBC33A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		EB93DEFA1938D47400DBC33A /* CSPaymentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSPaymentViewController.xib; sourceTree = "<group>"; };
 		EB93DF4E193E51BE00DBC33A /* CSProductDetailsViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CSProductDetailsViewController~ipad.xib"; sourceTree = "<group>"; };
-		EB93DF50193E51DE00DBC33A /* test.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = test.xib; sourceTree = "<group>"; };
 		EBD0B52D194232CE00E862C4 /* CartItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartItem.swift; sourceTree = "<group>"; };
 		EBD0B52F1942558A00E862C4 /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		EBD0B531194257F800E862C4 /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
@@ -338,7 +336,6 @@
 		EB6E2DC81931484400ED6B18 /* ProductDetails */ = {
 			isa = PBXGroup;
 			children = (
-				EB93DF50193E51DE00DBC33A /* test.xib */,
 				EB6E2DA3193142F400ED6B18 /* CSProductDetailsViewController.xib */,
 				EB93DF4E193E51BE00DBC33A /* CSProductDetailsViewController~ipad.xib */,
 				EBF4C0BA194363CE00AF4FB2 /* ProductDetailViewController.swift */,
@@ -506,7 +503,6 @@
 				EB6E2DB8193142F400ED6B18 /* CSLoginRegisterViewController.xib in Resources */,
 				EB6E2DB3193142F400ED6B18 /* CSCartItemCell.xib in Resources */,
 				EB93DF4F193E51BE00DBC33A /* CSProductDetailsViewController~ipad.xib in Resources */,
-				EB93DF51193E51DE00DBC33A /* test.xib in Resources */,
 				EB6E2DC6193144C700ED6B18 /* Config.plist in Resources */,
 				EBF4C0D1194467BA00AF4FB2 /* ProductsListViewController.xib in Resources */,
 				EB430B221931414F0012B27E /* InfoPlist.strings in Resources */,
