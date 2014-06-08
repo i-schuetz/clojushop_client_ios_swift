@@ -72,7 +72,7 @@
     [prodController.tabBarItem setTitle:@"Products"];
     
     
-    CSCartViewController *cartController = [[CSCartViewController alloc] init];
+    CartViewController *cartController = [[CartViewController alloc] init];
     UINavigationController *cartNavController = [[UINavigationController alloc] initWithRootViewController:cartController];
     [cartNavController.tabBarItem setTitle:@"Cart"];
     

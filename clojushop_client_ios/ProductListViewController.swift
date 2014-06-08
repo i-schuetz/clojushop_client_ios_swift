@@ -51,7 +51,7 @@ class ProductListViewController: BaseViewController, UITableViewDataSource, UITa
     }
 
 
-    func tableView(tableView:UITableView, indexPath:NSIndexPath) {
+    func tableView(tableView:UITableView, didSelectRowAtIndexPath indexPath:NSIndexPath) {
         
         let product = products[indexPath.row]
         

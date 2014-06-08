@@ -62,7 +62,7 @@ class LoginRegisterViewController:BaseViewController {
         
     func replaceWithAccountTab() {
 //        let accountController: CSUserAccountViewController = CSUserAccountViewController(nibName: CSUserAccountViewController) //TODO nib necessary here?
-        let accountController: CSUserAccountViewController = CSUserAccountViewController()
+        let accountController: UserAccountViewController = UserAccountViewController(nibName: "UserAccountViewController", bundle: nil)
         self.navigationController.tabBarItem.title = "User account"
         self.navigationController.pushViewController(accountController, animated: true)
         self.navigationController.navigationBarHidden = true
