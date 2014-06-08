@@ -8,7 +8,6 @@
 
 #import "CSUserAccountViewController.h"
 #import "CSDataStore.h"
-#import "CSLoginRegisterViewController.h"
 
 @interface CSUserAccountViewController ()
 

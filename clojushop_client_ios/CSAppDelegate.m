@@ -9,7 +9,6 @@
 #import "CSAppDelegate.h"
 #import <clojushop_client_ios-Swift.h>
 #import "CSCartViewController.h"
-#import "CSLoginRegisterViewController.h"
 #import "CSCartViewController.h"
 
 @implementation CSAppDelegate {
@@ -77,7 +76,7 @@
     UINavigationController *cartNavController = [[UINavigationController alloc] initWithRootViewController:cartController];
     [cartNavController.tabBarItem setTitle:@"Cart"];
     
-    CSLoginRegisterViewController *loginRegisterController = [[CSLoginRegisterViewController alloc] init];
+    LoginRegisterViewController *loginRegisterController = [[LoginRegisterViewController alloc] init];
     UINavigationController *loginRegisterNavController = [[UINavigationController alloc] initWithRootViewController:loginRegisterController];
     [loginRegisterNavController.tabBarItem setTitle:@"Login / Register"];
     
@@ -102,7 +101,7 @@
         tabIndex = 0;
     } else if ([viewController isKindOfClass:CSCartViewController.class]) {
         tabIndex = 1;
-    } else if ([viewController isKindOfClass:CSLoginRegisterViewController.class]) {
+    } else if ([viewController isKindOfClass:LoginRegisterViewController.class]) {
         tabIndex = 2;
     } else {
         NSLog(@"Forgot to handle view controller: %@", viewController);

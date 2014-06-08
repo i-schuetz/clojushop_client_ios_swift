@@ -8,5 +8,4 @@
 #import "CSDialogUtils.h"
 #import "CSCurrencyManager.h"
 #import "CSUserAccountViewController.h"
-#import "CSRegisterViewController.h"
 #import "CSBaseViewController.h"

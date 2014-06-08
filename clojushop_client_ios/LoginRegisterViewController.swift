@@ -10,11 +10,10 @@ import Foundation
 
 class LoginRegisterViewController:BaseViewController {
     
-    @IBOutlet var loginNameField:UITextField
-    @IBOutlet var loginPWField:UITextField
-    @IBOutlet var loginRegisterView:UIView
-    @IBOutlet var userAccountView:UIView
-    @IBOutlet var containerView:UIView
+    @IBOutlet var loginNameField:UITextField!
+    @IBOutlet var loginPWField:UITextField!
+    
+    @IBOutlet var viewWorkaround:UIView! //FIXME workaround didnt work
     
     init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: NSBundle!)  {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -30,12 +29,10 @@ class LoginRegisterViewController:BaseViewController {
         super.viewDidLoad()
         
         self.fillWithTestData()
-        
-        userAccountView.hidden = true
-        loginRegisterView.hidden = false
-        
-        let tap:UIGestureRecognizer = UIGestureRecognizer(target: self, action: "dismissKeyboard:")
-        
+
+        //FIXME nothing works - tap listener not called. Probably because the root view outlet is cant be attached?
+//        let tap:UIGestureRecognizer = UIGestureRecognizer(target: self, action: "dismissKeyboard:")
+        let tap:UIGestureRecognizer = UIGestureRecognizer(target: viewWorkaround, action: "dismissKeyboard:")
         self.view.addGestureRecognizer(tap)
     }
     
@@ -44,7 +41,7 @@ class LoginRegisterViewController:BaseViewController {
         loginPWField.resignFirstResponder()
     }
   
-    @IBAction func login(sender : UIButton) {
+    @IBAction func login(sender: UIButton) {
         let loginName:String = loginNameField.text
         let loginPW:String = loginPWField.text
 
@@ -58,8 +55,8 @@ class LoginRegisterViewController:BaseViewController {
             }, failureHandler: {() -> Void in }) //TODO shorthand for empty closure?
     }
     
-    @IBAction func register(sender : UIButton) {
-        let registerController:CSRegisterViewController = CSRegisterViewController()
+    @IBAction func register(sender: UIButton) {
+        let registerController:RegisterViewController = RegisterViewController(nibName: "RegisterViewController", bundle: nil)
         self.navigationController.pushViewController(registerController, animated: true)
     }
         
