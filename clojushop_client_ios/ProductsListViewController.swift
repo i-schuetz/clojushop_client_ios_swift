@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProductsListViewController2: BaseViewController, UITableViewDataSource, UITableViewDelegate, UISplitViewControllerDelegate {
+class ProductsListViewController: BaseViewController, UITableViewDataSource, UITableViewDelegate, UISplitViewControllerDelegate {
     var products:Product[]!
     
     @IBOutlet var tableView:UITableView!

@@ -42,7 +42,7 @@
 
 - (void)initTabs {
     
-    ProductsListViewController2 *productListController = [[ProductsListViewController2 alloc] init];
+    ProductsListViewController *productListController = [[ProductsListViewController alloc] init];
     
     
     UIViewController *prodController;
@@ -98,7 +98,7 @@
     int tabIndex = 0;
     
     //TODO dictionary
-    if ([viewController isKindOfClass:ProductsListViewController2.class]) {
+    if ([viewController isKindOfClass:ProductsListViewController.class]) {
         tabIndex = 0;
     } else if ([viewController isKindOfClass:CSCartViewController.class]) {
         tabIndex = 1;
