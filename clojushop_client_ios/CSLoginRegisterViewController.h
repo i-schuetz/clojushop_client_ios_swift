@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "CSBaseViewController.h"
 
+//@class BaseViewController
+
 @interface CSLoginRegisterViewController : CSBaseViewController
 
 @property (weak, nonatomic) IBOutlet UITextField *loginNameField;

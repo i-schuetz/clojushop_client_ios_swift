@@ -4,10 +4,9 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.11"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CSProductsListViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProductListViewController" customModule="clojushop_client_ios" customModuleProvider="target">
             <connections>
-                <outlet property="tableView" destination="8" id="Mud-5p-iCM"/>
-                <outlet property="view" destination="8" id="11"/>
+                <outlet property="tableView" destination="8" id="6Nm-vl-hLf"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

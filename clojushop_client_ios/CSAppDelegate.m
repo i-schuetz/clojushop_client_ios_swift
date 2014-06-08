@@ -7,12 +7,10 @@
 //
 
 #import "CSAppDelegate.h"
-#import "CSProductsListViewController.h"
-#import "CSProductsListViewController.h"
+#import <clojushop_client_ios-Swift.h>
 #import "CSCartViewController.h"
 #import "CSLoginRegisterViewController.h"
 #import "CSCartViewController.h"
-#import "CSProductDetailsViewController.h"
 
 @implementation CSAppDelegate {
     UITabBarController *tabBarController;
@@ -44,7 +42,7 @@
 
 - (void)initTabs {
     
-    CSProductsListViewController *productListController = [[CSProductsListViewController alloc] init];
+    ProductsListViewController2 *productListController = [[ProductsListViewController2 alloc] init];
     
     
     UIViewController *prodController;
@@ -53,8 +51,8 @@
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
         UINavigationController *productListNavController = [[UINavigationController alloc] initWithRootViewController:productListController];
 
-        CSProductDetailsViewController *productDetailsController = [[CSProductDetailsViewController alloc] initWithNibName:@"CSProductDetailsViewController" bundle:nil];
-        productListController.detailViewController = productDetailsController;
+        ProductDetailViewController *productDetailsController = [[ProductDetailViewController alloc] initWithNibName:@"CSProductDetailsViewController" bundle:nil];
+        productListController.detailsViewController = productDetailsController;
         
 //        CSProductDetailsViewController *productDetailsController = [[CSProductDetailsViewController alloc] init];
         UINavigationController *productDetailsNav = [[UINavigationController alloc] initWithRootViewController:productDetailsController];
@@ -100,7 +98,7 @@
     int tabIndex = 0;
     
     //TODO dictionary
-    if ([viewController isKindOfClass:CSProductsListViewController.class]) {
+    if ([viewController isKindOfClass:ProductsListViewController2.class]) {
         tabIndex = 0;
     } else if ([viewController isKindOfClass:CSCartViewController.class]) {
         tabIndex = 1;

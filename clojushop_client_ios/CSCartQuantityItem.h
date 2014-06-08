@@ -8,7 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "CSSingleSelectionItem.h"
-#import <clojushop_client_ios-Swift.h>
+
+@class CartItem;
 
 @interface CSCartQuantityItem : NSObject <CSSingleSelectionItem>
 

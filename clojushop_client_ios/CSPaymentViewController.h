@@ -8,7 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "STPView.h"
-#import <clojushop_client_ios-Swift.h>
+
+@class Currency;
 
 @interface CSPaymentViewController : UIViewController<STPViewDelegate>
 

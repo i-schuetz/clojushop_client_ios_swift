@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CSBaseViewController.h"
 #import "CSSingleSelectionController.h"
+#import "CSBaseViewController.h"
 
-@interface CSCartViewController : CSBaseViewController <CSSingleSelectionControllerDelegate>
+//@class BaseViewController;
+
+@interface CSCartViewController: CSBaseViewController <CSSingleSelectionControllerDelegate>
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) IBOutlet UIView *emptyCartView;

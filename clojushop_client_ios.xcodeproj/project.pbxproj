@@ -30,7 +30,6 @@
 		EB430B3F1931414F0012B27E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB430B3D1931414F0012B27E /* InfoPlist.strings */; };
 		EB430B41193141500012B27E /* clojushop_client_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB430B40193141500012B27E /* clojushop_client_iosTests.m */; };
 		EB4CB59C1940ED9A0092457E /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4CB59B1940ED9A0092457E /* Product.swift */; };
-		EB6E2DB0193142F400ED6B18 /* CSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6E2D8E193142F400ED6B18 /* CSBaseViewController.m */; };
 		EB6E2DB2193142F400ED6B18 /* CSCartItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6E2D92193142F400ED6B18 /* CSCartItemCell.m */; };
 		EB6E2DB3193142F400ED6B18 /* CSCartItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB6E2D93193142F400ED6B18 /* CSCartItemCell.xib */; };
 		EB6E2DB4193142F400ED6B18 /* CSCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6E2D95193142F400ED6B18 /* CSCartViewController.m */; };
@@ -38,11 +37,8 @@
 		EB6E2DB7193142F400ED6B18 /* CSLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6E2D9A193142F400ED6B18 /* CSLoginRegisterViewController.m */; };
 		EB6E2DB8193142F400ED6B18 /* CSLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB6E2D9B193142F400ED6B18 /* CSLoginRegisterViewController.xib */; };
 		EB6E2DBB193142F400ED6B18 /* CSProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB6E2DA0193142F400ED6B18 /* CSProductCell.xib */; };
-		EB6E2DBC193142F400ED6B18 /* CSProductDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6E2DA2193142F400ED6B18 /* CSProductDetailsViewController.m */; };
 		EB6E2DBD193142F400ED6B18 /* CSProductDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB6E2DA3193142F400ED6B18 /* CSProductDetailsViewController.xib */; };
-		EB6E2DBE193142F400ED6B18 /* CSProductsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6E2DA5193142F400ED6B18 /* CSProductsListViewController.m */; };
 		EB6E2DBF193142F400ED6B18 /* CSProductsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB6E2DA6193142F400ED6B18 /* CSProductsListViewController.xib */; };
-		EB6E2DC0193142F400ED6B18 /* CSProgressIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6E2DA8193142F400ED6B18 /* CSProgressIndicator.m */; };
 		EB6E2DC1193142F400ED6B18 /* CSRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6E2DAA193142F400ED6B18 /* CSRegisterViewController.m */; };
 		EB6E2DC2193142F400ED6B18 /* CSRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB6E2DAB193142F400ED6B18 /* CSRegisterViewController.xib */; };
 		EB6E2DC3193142F400ED6B18 /* CSUserAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6E2DAE193142F400ED6B18 /* CSUserAccountViewController.m */; };
@@ -59,6 +55,16 @@
 		EBD0B532194257F800E862C4 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD0B531194257F800E862C4 /* ProductCell.swift */; };
 		EBF4C0B5194345A700AF4FB2 /* ProductCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF4C0B4194345A700AF4FB2 /* ProductCD.swift */; };
 		EBF4C0B719434EF400AF4FB2 /* CSCartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBF4C0B619434EF400AF4FB2 /* CSCartViewController.xib */; };
+		EBF4C0BB194363CE00AF4FB2 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF4C0BA194363CE00AF4FB2 /* ProductDetailViewController.swift */; };
+		EBF4C0BD1943691E00AF4FB2 /* ListViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF4C0BC1943691E00AF4FB2 /* ListViewControllerDelegate.swift */; };
+		EBF4C0BF19438E3A00AF4FB2 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF4C0BE19438E3A00AF4FB2 /* ProductListViewController.swift */; };
+		EBF4C0C119438F6700AF4FB2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF4C0C019438F6700AF4FB2 /* BaseViewController.swift */; };
+		EBF4C0C31943B10A00AF4FB2 /* ProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF4C0C21943B10A00AF4FB2 /* ProgressIndicator.swift */; };
+		EBF4C0C51943C2BE00AF4FB2 /* LoginRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF4C0C41943C2BE00AF4FB2 /* LoginRegisterViewController.swift */; };
+		EBF4C0C81943C8C000AF4FB2 /* CSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF4C0C71943C8C000AF4FB2 /* CSBaseViewController.m */; };
+		EBF4C0CB1943C96300AF4FB2 /* CSProgressIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF4C0CA1943C96300AF4FB2 /* CSProgressIndicator.m */; };
+		EBF4C0D0194467BA00AF4FB2 /* ProductsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF4C0CE194467BA00AF4FB2 /* ProductsListViewController.swift */; };
+		EBF4C0D1194467BA00AF4FB2 /* ProductsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBF4C0CF194467BA00AF4FB2 /* ProductsListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,8 +112,6 @@
 		EB430B3E1931414F0012B27E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EB430B40193141500012B27E /* clojushop_client_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = clojushop_client_iosTests.m; sourceTree = "<group>"; };
 		EB4CB59B1940ED9A0092457E /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
-		EB6E2D8D193142F400ED6B18 /* CSBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSBaseViewController.h; sourceTree = "<group>"; };
-		EB6E2D8E193142F400ED6B18 /* CSBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSBaseViewController.m; sourceTree = "<group>"; };
 		EB6E2D91193142F400ED6B18 /* CSCartItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSCartItemCell.h; sourceTree = "<group>"; };
 		EB6E2D92193142F400ED6B18 /* CSCartItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSCartItemCell.m; sourceTree = "<group>"; };
 		EB6E2D93193142F400ED6B18 /* CSCartItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSCartItemCell.xib; sourceTree = "<group>"; };
@@ -119,14 +123,8 @@
 		EB6E2D9A193142F400ED6B18 /* CSLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLoginRegisterViewController.m; sourceTree = "<group>"; };
 		EB6E2D9B193142F400ED6B18 /* CSLoginRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSLoginRegisterViewController.xib; sourceTree = "<group>"; };
 		EB6E2DA0193142F400ED6B18 /* CSProductCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSProductCell.xib; sourceTree = "<group>"; };
-		EB6E2DA1193142F400ED6B18 /* CSProductDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSProductDetailsViewController.h; sourceTree = "<group>"; };
-		EB6E2DA2193142F400ED6B18 /* CSProductDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSProductDetailsViewController.m; sourceTree = "<group>"; };
 		EB6E2DA3193142F400ED6B18 /* CSProductDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSProductDetailsViewController.xib; sourceTree = "<group>"; };
-		EB6E2DA4193142F400ED6B18 /* CSProductsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSProductsListViewController.h; sourceTree = "<group>"; };
-		EB6E2DA5193142F400ED6B18 /* CSProductsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSProductsListViewController.m; sourceTree = "<group>"; };
 		EB6E2DA6193142F400ED6B18 /* CSProductsListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSProductsListViewController.xib; sourceTree = "<group>"; };
-		EB6E2DA7193142F400ED6B18 /* CSProgressIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSProgressIndicator.h; sourceTree = "<group>"; };
-		EB6E2DA8193142F400ED6B18 /* CSProgressIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSProgressIndicator.m; sourceTree = "<group>"; };
 		EB6E2DA9193142F400ED6B18 /* CSRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRegisterViewController.h; sourceTree = "<group>"; };
 		EB6E2DAA193142F400ED6B18 /* CSRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRegisterViewController.m; sourceTree = "<group>"; };
 		EB6E2DAB193142F400ED6B18 /* CSRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSRegisterViewController.xib; sourceTree = "<group>"; };
@@ -148,6 +146,18 @@
 		EBD0B531194257F800E862C4 /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		EBF4C0B4194345A700AF4FB2 /* ProductCD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCD.swift; sourceTree = "<group>"; };
 		EBF4C0B619434EF400AF4FB2 /* CSCartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSCartViewController.xib; sourceTree = "<group>"; };
+		EBF4C0BA194363CE00AF4FB2 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
+		EBF4C0BC1943691E00AF4FB2 /* ListViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewControllerDelegate.swift; sourceTree = "<group>"; };
+		EBF4C0BE19438E3A00AF4FB2 /* ProductListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		EBF4C0C019438F6700AF4FB2 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		EBF4C0C21943B10A00AF4FB2 /* ProgressIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressIndicator.swift; sourceTree = "<group>"; };
+		EBF4C0C41943C2BE00AF4FB2 /* LoginRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRegisterViewController.swift; sourceTree = "<group>"; };
+		EBF4C0C61943C8C000AF4FB2 /* CSBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSBaseViewController.h; sourceTree = "<group>"; };
+		EBF4C0C71943C8C000AF4FB2 /* CSBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSBaseViewController.m; sourceTree = "<group>"; };
+		EBF4C0C91943C96300AF4FB2 /* CSProgressIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSProgressIndicator.h; sourceTree = "<group>"; };
+		EBF4C0CA1943C96300AF4FB2 /* CSProgressIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSProgressIndicator.m; sourceTree = "<group>"; };
+		EBF4C0CE194467BA00AF4FB2 /* ProductsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsListViewController.swift; sourceTree = "<group>"; };
+		EBF4C0CF194467BA00AF4FB2 /* ProductsListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductsListViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +264,10 @@
 		EB430B1D1931414F0012B27E /* clojushop_client_ios */ = {
 			isa = PBXGroup;
 			children = (
+				EBF4C0C91943C96300AF4FB2 /* CSProgressIndicator.h */,
+				EBF4C0CA1943C96300AF4FB2 /* CSProgressIndicator.m */,
+				EBF4C0C61943C8C000AF4FB2 /* CSBaseViewController.h */,
+				EBF4C0C71943C8C000AF4FB2 /* CSBaseViewController.m */,
 				EB93DEF21938CF6E00DBC33A /* Payment */,
 				EB20050C19377110006F3832 /* Currency */,
 				EB2004EE19366806006F3832 /* CoreData */,
@@ -266,8 +280,7 @@
 				EB6E2DC91931485000ED6B18 /* Cart */,
 				EB6E2DC81931484400ED6B18 /* ProductDetails */,
 				EB6E2DC71931482600ED6B18 /* ProductList */,
-				EB6E2D8D193142F400ED6B18 /* CSBaseViewController.h */,
-				EB6E2D8E193142F400ED6B18 /* CSBaseViewController.m */,
+				EBF4C0C019438F6700AF4FB2 /* BaseViewController.swift */,
 				EB30C6651934BA6C0039388F /* SingleSelection */,
 				EB6E2DAC193142F400ED6B18 /* CSStatusCodes.h */,
 				EB430B261931414F0012B27E /* CSAppDelegate.h */,
@@ -315,10 +328,12 @@
 			children = (
 				EBD0B531194257F800E862C4 /* ProductCell.swift */,
 				EB6E2DA0193142F400ED6B18 /* CSProductCell.xib */,
-				EB6E2DA4193142F400ED6B18 /* CSProductsListViewController.h */,
-				EB6E2DA5193142F400ED6B18 /* CSProductsListViewController.m */,
+				EBF4C0BE19438E3A00AF4FB2 /* ProductListViewController.swift */,
 				EB6E2DA6193142F400ED6B18 /* CSProductsListViewController.xib */,
 				EB4CB59B1940ED9A0092457E /* Product.swift */,
+				EBF4C0BC1943691E00AF4FB2 /* ListViewControllerDelegate.swift */,
+				EBF4C0CE194467BA00AF4FB2 /* ProductsListViewController.swift */,
+				EBF4C0CF194467BA00AF4FB2 /* ProductsListViewController.xib */,
 			);
 			name = ProductList;
 			sourceTree = "<group>";
@@ -326,11 +341,10 @@
 		EB6E2DC81931484400ED6B18 /* ProductDetails */ = {
 			isa = PBXGroup;
 			children = (
-				EB6E2DA1193142F400ED6B18 /* CSProductDetailsViewController.h */,
-				EB6E2DA2193142F400ED6B18 /* CSProductDetailsViewController.m */,
 				EB93DF50193E51DE00DBC33A /* test.xib */,
 				EB6E2DA3193142F400ED6B18 /* CSProductDetailsViewController.xib */,
 				EB93DF4E193E51BE00DBC33A /* CSProductDetailsViewController~ipad.xib */,
+				EBF4C0BA194363CE00AF4FB2 /* ProductDetailViewController.swift */,
 			);
 			name = ProductDetails;
 			sourceTree = "<group>";
@@ -354,8 +368,7 @@
 		EB6E2DCA1931485600ED6B18 /* VIews */ = {
 			isa = PBXGroup;
 			children = (
-				EB6E2DA7193142F400ED6B18 /* CSProgressIndicator.h */,
-				EB6E2DA8193142F400ED6B18 /* CSProgressIndicator.m */,
+				EBF4C0C21943B10A00AF4FB2 /* ProgressIndicator.swift */,
 			);
 			name = VIews;
 			sourceTree = "<group>";
@@ -365,6 +378,7 @@
 			children = (
 				EB6E2D99193142F400ED6B18 /* CSLoginRegisterViewController.h */,
 				EB6E2D9A193142F400ED6B18 /* CSLoginRegisterViewController.m */,
+				EBF4C0C41943C2BE00AF4FB2 /* LoginRegisterViewController.swift */,
 				EB6E2D9B193142F400ED6B18 /* CSLoginRegisterViewController.xib */,
 			);
 			name = Login;
@@ -497,6 +511,7 @@
 				EB93DF4F193E51BE00DBC33A /* CSProductDetailsViewController~ipad.xib in Resources */,
 				EB93DF51193E51DE00DBC33A /* test.xib in Resources */,
 				EB6E2DC6193144C700ED6B18 /* Config.plist in Resources */,
+				EBF4C0D1194467BA00AF4FB2 /* ProductsListViewController.xib in Resources */,
 				EB6E2DBF193142F400ED6B18 /* CSProductsListViewController.xib in Resources */,
 				EB430B221931414F0012B27E /* InfoPlist.strings in Resources */,
 				EB6E2DBD193142F400ED6B18 /* CSProductDetailsViewController.xib in Resources */,
@@ -556,31 +571,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBF4C0C51943C2BE00AF4FB2 /* LoginRegisterViewController.swift in Sources */,
+				EBF4C0D0194467BA00AF4FB2 /* ProductsListViewController.swift in Sources */,
+				EBF4C0C31943B10A00AF4FB2 /* ProgressIndicator.swift in Sources */,
 				EB6E2DB4193142F400ED6B18 /* CSCartViewController.m in Sources */,
-				EB6E2DBE193142F400ED6B18 /* CSProductsListViewController.m in Sources */,
+				EBF4C0BF19438E3A00AF4FB2 /* ProductListViewController.swift in Sources */,
 				EB2004E61934F360006F3832 /* CSSingleSelectionController.m in Sources */,
 				EB6E2DC1193142F400ED6B18 /* CSRegisterViewController.m in Sources */,
 				EB2004F41936690D006F3832 /* CSDataStoreLocal.m in Sources */,
 				EB430B281931414F0012B27E /* CSAppDelegate.m in Sources */,
 				EB20050819375F1B006F3832 /* CSCurrencyManager.m in Sources */,
-				EB6E2DB0193142F400ED6B18 /* CSBaseViewController.m in Sources */,
 				EBF4C0B5194345A700AF4FB2 /* ProductCD.swift in Sources */,
 				EBD0B5301942558A00E862C4 /* Currency.swift in Sources */,
 				EB430B241931414F0012B27E /* main.m in Sources */,
-				EB6E2DBC193142F400ED6B18 /* CSProductDetailsViewController.m in Sources */,
 				EB6E2DC3193142F400ED6B18 /* CSUserAccountViewController.m in Sources */,
 				EB2004ED19350D44006F3832 /* CSCartQuantityItem.m in Sources */,
-				EB6E2DC0193142F400ED6B18 /* CSProgressIndicator.m in Sources */,
 				EB6E2DB2193142F400ED6B18 /* CSCartItemCell.m in Sources */,
+				EBF4C0CB1943C96300AF4FB2 /* CSProgressIndicator.m in Sources */,
 				EB6E2DB6193142F400ED6B18 /* CSDataStoreRemote.m in Sources */,
+				EBF4C0BB194363CE00AF4FB2 /* ProductDetailViewController.swift in Sources */,
 				EBD0B532194257F800E862C4 /* ProductCell.swift in Sources */,
 				EB6E2DB7193142F400ED6B18 /* CSLoginRegisterViewController.m in Sources */,
 				EB2004F719367667006F3832 /* CSDataStore.m in Sources */,
 				EB30C6631933FF730039388F /* CSDialogUtils.m in Sources */,
+				EBF4C0C81943C8C000AF4FB2 /* CSBaseViewController.m in Sources */,
+				EBF4C0BD1943691E00AF4FB2 /* ListViewControllerDelegate.swift in Sources */,
 				EB93DEF51938CF8300DBC33A /* CSPaymentViewController.m in Sources */,
 				EB430B2B1931414F0012B27E /* clojushop_client_ios.xcdatamodeld in Sources */,
 				EBD0B52E194232CE00E862C4 /* CartItem.swift in Sources */,
 				EB4CB59C1940ED9A0092457E /* Product.swift in Sources */,
+				EBF4C0C119438F6700AF4FB2 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
