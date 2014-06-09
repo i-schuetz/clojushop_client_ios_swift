@@ -8,8 +8,6 @@
 
 #import "CSAppDelegate.h"
 #import <clojushop_client_ios-Swift.h>
-#import "CSCartViewController.h"
-#import "CSCartViewController.h"
 
 @implementation CSAppDelegate {
     UITabBarController *tabBarController;
@@ -99,7 +97,7 @@
     //TODO dictionary
     if ([viewController isKindOfClass:ProductsListViewController.class]) {
         tabIndex = 0;
-    } else if ([viewController isKindOfClass:CSCartViewController.class]) {
+    } else if ([viewController isKindOfClass:CartViewController.class]) {
         tabIndex = 1;
     } else if ([viewController isKindOfClass:LoginRegisterViewController.class]) {
         tabIndex = 2;
