@@ -10,7 +10,6 @@
 #import "AFHTTPRequestOperationManager.h"
 #import "CSDataStoreRemote.h"
 #import <clojushop_client_ios-Swift.h>
-#import "CSDialogUtils.h"
 
 
 @implementation CSDataStoreRemote {
@@ -161,7 +160,7 @@
             break;
     }
     
-    [CSDialogUtils showAlert: @"Error" msg: errorMsg];
+    [DialogUtils showAlert: @"Error" msg: errorMsg];
 }
 
 

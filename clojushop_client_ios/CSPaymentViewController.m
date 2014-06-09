@@ -8,8 +8,8 @@
 
 #import "CSPaymentViewController.h"
 #import "MBProgressHUD.h"
-#import "CSDialogUtils.h"
 #import "CSDataStore.h"
+#import <clojushop_client_ios-Swift.h>
 
 #define EXAMPLE_STRIPE_PUBLISHABLE_KEY @"pk_test_6pRNASCoBOKtIshFeQd4XMUh"
 
@@ -78,7 +78,7 @@
         [self.navigationController popViewControllerAnimated:YES];
 
     } failureHandler:^{
-        [CSDialogUtils showAlert:@"Error" msg:@"Error ocurred processing payment"];
+        [DialogUtils showAlert:@"Error" msg:@"Error ocurred processing payment"];
     }];
     
 //    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:@"https://example.com"]];

@@ -70,7 +70,7 @@ class CartViewController: BaseViewController, UITableViewDataSource, UITableView
             //for now we assume all the items have the same currency
             let currencyId = items[0].currency
             
-            self.totalView.text = CSCurrencyManager.sharedCurrencyManager().getFormattedPrice(String(self.getTotalPrice(items)), currencyId: currencyId)
+            self.totalView.text = CurrencyManager.sharedCurrencyManager().getFormattedPrice(String(self.getTotalPrice(items)), currencyId: currencyId)
 
             self.showCartState(false)
             self.tableView.reloadData()
@@ -174,7 +174,7 @@ class CartViewController: BaseViewController, UITableViewDataSource, UITableView
         cell.productDescr.text = item.descr
         cell.productBrand.text = item.seller
         
-        cell.productPrice.text = CSCurrencyManager.sharedCurrencyManager().getFormattedPrice(item.price, currencyId: item.currency)
+        cell.productPrice.text = CurrencyManager.sharedCurrencyManager().getFormattedPrice(item.price, currencyId: item.currency)
         
         cell.quantityField.text = item.quantity
         

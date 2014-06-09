@@ -63,7 +63,7 @@ class ProductsListViewController: BaseViewController, UITableViewDataSource, UIT
         cell.productDescr.text = product.descr
         cell.productBrand.text = product.seller
         
-        cell.productPrice.text = CSCurrencyManager.sharedCurrencyManager().getFormattedPrice(product.price, currencyId: product.currency)
+        cell.productPrice.text = CurrencyManager.sharedCurrencyManager().getFormattedPrice(product.price, currencyId: product.currency)
         
         cell.productImg.setImageWithURL(NSURL.URLWithString(product.imgList))
         

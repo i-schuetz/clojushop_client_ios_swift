@@ -20,6 +20,7 @@ class Currency {
     
     //workaround for runtime error when calling the contructor from objective c
     class func initHelper(id:Int, format:String) -> Currency {
+        
         return Currency(id: id, format: format)
     }
 }

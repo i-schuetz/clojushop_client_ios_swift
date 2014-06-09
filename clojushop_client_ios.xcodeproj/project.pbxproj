@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		9AB4D4AB0B8140FDB48C2672 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 534DB83434194207AEA77107 /* libPods.a */; };
+		EB0A6B1D1945334D00B80BD0 /* DialogUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0A6B1C1945334D00B80BD0 /* DialogUtils.swift */; };
+		EB0A6B1F194535A200B80BD0 /* CurrencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0A6B1E194535A200B80BD0 /* CurrencyManager.swift */; };
 		EB2004F41936690D006F3832 /* CSDataStoreLocal.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2004F31936690D006F3832 /* CSDataStoreLocal.m */; };
 		EB2004F719367667006F3832 /* CSDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2004F619367667006F3832 /* CSDataStore.m */; };
-		EB20050819375F1B006F3832 /* CSCurrencyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EB20050719375F1B006F3832 /* CSCurrencyManager.m */; };
-		EB30C6631933FF730039388F /* CSDialogUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = EB30C6621933FF730039388F /* CSDialogUtils.m */; };
 		EB430B161931414F0012B27E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB430B151931414F0012B27E /* Foundation.framework */; };
 		EB430B181931414F0012B27E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB430B171931414F0012B27E /* CoreGraphics.framework */; };
 		EB430B1A1931414F0012B27E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB430B191931414F0012B27E /* UIKit.framework */; };
@@ -77,14 +77,12 @@
 /* Begin PBXFileReference section */
 		534DB83434194207AEA77107 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C0CB28466B844BBA7A6AD8D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		EB0A6B1C1945334D00B80BD0 /* DialogUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogUtils.swift; sourceTree = "<group>"; };
+		EB0A6B1E194535A200B80BD0 /* CurrencyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyManager.swift; sourceTree = "<group>"; };
 		EB2004F21936690D006F3832 /* CSDataStoreLocal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSDataStoreLocal.h; sourceTree = "<group>"; };
 		EB2004F31936690D006F3832 /* CSDataStoreLocal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSDataStoreLocal.m; sourceTree = "<group>"; };
 		EB2004F519367667006F3832 /* CSDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSDataStore.h; sourceTree = "<group>"; };
 		EB2004F619367667006F3832 /* CSDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSDataStore.m; sourceTree = "<group>"; };
-		EB20050619375F1B006F3832 /* CSCurrencyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSCurrencyManager.h; sourceTree = "<group>"; };
-		EB20050719375F1B006F3832 /* CSCurrencyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSCurrencyManager.m; sourceTree = "<group>"; };
-		EB30C6611933FF730039388F /* CSDialogUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSDialogUtils.h; sourceTree = "<group>"; };
-		EB30C6621933FF730039388F /* CSDialogUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSDialogUtils.m; sourceTree = "<group>"; };
 		EB430B121931414F0012B27E /* clojushop_client_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clojushop_client_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB430B151931414F0012B27E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EB430B171931414F0012B27E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -184,8 +182,7 @@
 		EB20050C19377110006F3832 /* Currency */ = {
 			isa = PBXGroup;
 			children = (
-				EB20050619375F1B006F3832 /* CSCurrencyManager.h */,
-				EB20050719375F1B006F3832 /* CSCurrencyManager.m */,
+				EB0A6B1E194535A200B80BD0 /* CurrencyManager.swift */,
 				EBD0B52F1942558A00E862C4 /* Currency.swift */,
 			);
 			name = Currency;
@@ -194,8 +191,7 @@
 		EB30C6641933FF7F0039388F /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				EB30C6611933FF730039388F /* CSDialogUtils.h */,
-				EB30C6621933FF730039388F /* CSDialogUtils.m */,
+				EB0A6B1C1945334D00B80BD0 /* DialogUtils.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -545,22 +541,22 @@
 				EB81EB491944DF2C003FBCCB /* CartViewController.swift in Sources */,
 				EBF4C0C31943B10A00AF4FB2 /* ProgressIndicator.swift in Sources */,
 				EBF4C0BF19438E3A00AF4FB2 /* ProductListViewController.swift in Sources */,
+				EB0A6B1D1945334D00B80BD0 /* DialogUtils.swift in Sources */,
 				EB46958A19448854003AA715 /* UserAccountViewController.swift in Sources */,
 				EB2004F41936690D006F3832 /* CSDataStoreLocal.m in Sources */,
 				EB430B281931414F0012B27E /* CSAppDelegate.m in Sources */,
 				EB81EB3B1944BBEA003FBCCB /* SingleSelectionViewController.swift in Sources */,
-				EB20050819375F1B006F3832 /* CSCurrencyManager.m in Sources */,
 				EB81EB3F1944BD3A003FBCCB /* SingleSelectionItem.swift in Sources */,
 				EBF4C0B5194345A700AF4FB2 /* ProductCD.swift in Sources */,
 				EBD0B5301942558A00E862C4 /* Currency.swift in Sources */,
 				EB430B241931414F0012B27E /* main.m in Sources */,
 				EB81EB471944DCC0003FBCCB /* CartItemCell.swift in Sources */,
+				EB0A6B1F194535A200B80BD0 /* CurrencyManager.swift in Sources */,
 				EB6E2DB6193142F400ED6B18 /* CSDataStoreRemote.m in Sources */,
 				EBF4C0BB194363CE00AF4FB2 /* ProductDetailViewController.swift in Sources */,
 				EBD0B532194257F800E862C4 /* ProductCell.swift in Sources */,
 				EB2004F719367667006F3832 /* CSDataStore.m in Sources */,
 				EB4695881944800A003AA715 /* RegisterViewController.swift in Sources */,
-				EB30C6631933FF730039388F /* CSDialogUtils.m in Sources */,
 				EBF4C0BD1943691E00AF4FB2 /* ListViewControllerDelegate.swift in Sources */,
 				EB81EB451944DB2E003FBCCB /* CartQuantityItem.swift in Sources */,
 				EB93DEF51938CF8300DBC33A /* CSPaymentViewController.m in Sources */,

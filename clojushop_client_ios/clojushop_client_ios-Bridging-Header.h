@@ -4,6 +4,4 @@
 
 #import "UIImageView+AFNetworking.h"
 #import "CSDataStore.h"
-#import "CSDialogUtils.h"
-#import "CSCurrencyManager.h"
 #import "CSPaymentViewController.h"
