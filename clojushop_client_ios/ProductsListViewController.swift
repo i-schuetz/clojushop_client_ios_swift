@@ -31,15 +31,13 @@ class ProductsListViewController: BaseViewController, UITableViewDataSource, UIT
     func requestProducts() {
         self.setProgressHidden(false)
         
-        CSDataStore.sharedDataStore().getProducts(0, size: 4, successHandler:
-            
-            //TODO add types in DataStore
-            {(products:AnyObject[]!) -> Void in
-                
+        DataStore.sharedDataStore().getProducts(0, size: 4,
+            successHandler: {(products:Product[]!) -> Void in
                 self.setProgressHidden(true)
-                self.onRetrievedProducts(products as Product[])
+                self.onRetrievedProducts(products)
             },
-            failureHandler: {() -> Void in
+            failureHandler: {(Int) -> Bool in
+                return false
             })
     }
     

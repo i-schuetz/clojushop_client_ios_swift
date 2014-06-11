@@ -85,9 +85,9 @@ class ProductDetailViewController: BaseViewController, ListViewControllerDelegat
     }
     
     @IBAction func onAddToCartPress(sender : UIButton) {
-        CSDataStore.sharedDataStore().addToCart(product.id, successHandler: {() -> Void in
+        DataStore.sharedDataStore().addToCart(product.id, successHandler: {() -> Void in
             DialogUtils.showAlert("Success", msg: "Added!")
             
-            }, failureHandler: {() -> Void in }) //TODO shorthand for empty closure?
+            }, failureHandler: {(Int) -> Bool in return false}) //TODO shorthand for empty closure?
     }
 }

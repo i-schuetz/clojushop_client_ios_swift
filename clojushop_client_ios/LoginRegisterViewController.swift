@@ -47,12 +47,12 @@ class LoginRegisterViewController:BaseViewController {
 
         self.setProgressHidden(false)
         
-        CSDataStore.sharedDataStore().login(loginName, password: loginPW, successHandler: {() -> Void in
+        DataStore.sharedDataStore().login(loginName, password: loginPW, successHandler: {() -> Void in
 
             self.setProgressHidden(true)
             self.replaceWithAccountTab()
             
-            }, failureHandler: {() -> Void in }) //TODO shorthand for empty closure?
+            }, failureHandler: {(Int) -> Bool in return false}) //TODO shorthand for empty closure?
     }
     
     @IBAction func register(sender: UIButton) {

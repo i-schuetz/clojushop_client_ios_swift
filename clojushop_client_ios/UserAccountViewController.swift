@@ -33,26 +33,26 @@ class UserAccountViewController: BaseViewController {
     override func viewDidAppear(animated: Bool) {
         self.setProgressHidden(false)
         
-        CSDataStore.sharedDataStore().getUser(
+        DataStore.sharedDataStore().getUser(
             
-            {(user:NSDictionary!) -> Void in
+            {(user:User!) -> Void in
                 self.setProgressHidden(true)
                 
-                self.nameField.text = user["una"] as String
-                self.emailField.text = user["uem"] as String
-                
-            }, failureHandler: {() -> Void in }) //TODO shorthand for empty closure?
+                self.nameField.text = user.name
+                self.emailField.text = user.email
+//
+            }, failureHandler: {(Int) -> Bool in return false}) //TODO shorthand for empty closure?
     }
     
     func logout() {
 //        self.setProgressHidden(false)
 
-        CSDataStore.sharedDataStore().logout(
+        DataStore.sharedDataStore().logout(
             {() -> Void in
 //                self.setProgressHidden(true)
                 self.replaceWithLoginRegisterTab()
             
-            }, failureHandler: {() -> Void in }) //TODO shorthand for empty closure?
+            }, failureHandler: {(Int) -> Bool in return false}) //TODO shorthand for empty closure?
     }
     
     

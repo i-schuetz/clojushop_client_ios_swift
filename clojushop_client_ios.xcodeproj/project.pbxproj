@@ -10,8 +10,6 @@
 		9AB4D4AB0B8140FDB48C2672 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 534DB83434194207AEA77107 /* libPods.a */; };
 		EB0A6B1D1945334D00B80BD0 /* DialogUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0A6B1C1945334D00B80BD0 /* DialogUtils.swift */; };
 		EB0A6B1F194535A200B80BD0 /* CurrencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0A6B1E194535A200B80BD0 /* CurrencyManager.swift */; };
-		EB2004F41936690D006F3832 /* CSDataStoreLocal.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2004F31936690D006F3832 /* CSDataStoreLocal.m */; };
-		EB2004F719367667006F3832 /* CSDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2004F619367667006F3832 /* CSDataStore.m */; };
 		EB430B161931414F0012B27E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB430B151931414F0012B27E /* Foundation.framework */; };
 		EB430B181931414F0012B27E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB430B171931414F0012B27E /* CoreGraphics.framework */; };
 		EB430B1A1931414F0012B27E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB430B191931414F0012B27E /* UIKit.framework */; };
@@ -31,13 +29,13 @@
 		EB46958A19448854003AA715 /* UserAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB46958919448854003AA715 /* UserAccountViewController.swift */; };
 		EB4CB59C1940ED9A0092457E /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4CB59B1940ED9A0092457E /* Product.swift */; };
 		EB6E2DB3193142F400ED6B18 /* CartItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB6E2D93193142F400ED6B18 /* CartItemCell.xib */; };
-		EB6E2DB6193142F400ED6B18 /* CSDataStoreRemote.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6E2D98193142F400ED6B18 /* CSDataStoreRemote.m */; };
 		EB6E2DB8193142F400ED6B18 /* LoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB6E2D9B193142F400ED6B18 /* LoginRegisterViewController.xib */; };
 		EB6E2DBB193142F400ED6B18 /* CSProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB6E2DA0193142F400ED6B18 /* CSProductCell.xib */; };
 		EB6E2DBD193142F400ED6B18 /* CSProductDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB6E2DA3193142F400ED6B18 /* CSProductDetailsViewController.xib */; };
 		EB6E2DC2193142F400ED6B18 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB6E2DAB193142F400ED6B18 /* RegisterViewController.xib */; };
 		EB6E2DC4193142F400ED6B18 /* UserAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB6E2DAF193142F400ED6B18 /* UserAccountViewController.xib */; };
 		EB6E2DC6193144C700ED6B18 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB6E2DC5193144C700ED6B18 /* Config.plist */; };
+		EB7F2BF21947AF010046C6A4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7F2BF11947AF010046C6A4 /* User.swift */; };
 		EB81EB3B1944BBEA003FBCCB /* SingleSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB81EB3A1944BBEA003FBCCB /* SingleSelectionViewController.swift */; };
 		EB81EB3D1944BCC5003FBCCB /* SingleSelectionControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB81EB3C1944BCC5003FBCCB /* SingleSelectionControllerDelegate.swift */; };
 		EB81EB3F1944BD3A003FBCCB /* SingleSelectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB81EB3E1944BD3A003FBCCB /* SingleSelectionItem.swift */; };
@@ -62,6 +60,9 @@
 		EBF4C0C51943C2BE00AF4FB2 /* LoginRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF4C0C41943C2BE00AF4FB2 /* LoginRegisterViewController.swift */; };
 		EBF4C0D0194467BA00AF4FB2 /* ProductsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF4C0CE194467BA00AF4FB2 /* ProductsListViewController.swift */; };
 		EBF4C0D1194467BA00AF4FB2 /* ProductsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBF4C0CF194467BA00AF4FB2 /* ProductsListViewController.xib */; };
+		EBFCAB55194612F600A82A6F /* DataStoreLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFCAB54194612F600A82A6F /* DataStoreLocal.swift */; };
+		EBFCAB57194649C600A82A6F /* DataStoreRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFCAB56194649C600A82A6F /* DataStoreRemote.swift */; };
+		EBFCAB591947832E00A82A6F /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFCAB581947832E00A82A6F /* DataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,10 +80,6 @@
 		6C0CB28466B844BBA7A6AD8D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		EB0A6B1C1945334D00B80BD0 /* DialogUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogUtils.swift; sourceTree = "<group>"; };
 		EB0A6B1E194535A200B80BD0 /* CurrencyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyManager.swift; sourceTree = "<group>"; };
-		EB2004F21936690D006F3832 /* CSDataStoreLocal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSDataStoreLocal.h; sourceTree = "<group>"; };
-		EB2004F31936690D006F3832 /* CSDataStoreLocal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSDataStoreLocal.m; sourceTree = "<group>"; };
-		EB2004F519367667006F3832 /* CSDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSDataStore.h; sourceTree = "<group>"; };
-		EB2004F619367667006F3832 /* CSDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSDataStore.m; sourceTree = "<group>"; };
 		EB430B121931414F0012B27E /* clojushop_client_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clojushop_client_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB430B151931414F0012B27E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EB430B171931414F0012B27E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -105,8 +102,6 @@
 		EB46958919448854003AA715 /* UserAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccountViewController.swift; sourceTree = "<group>"; };
 		EB4CB59B1940ED9A0092457E /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		EB6E2D93193142F400ED6B18 /* CartItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CartItemCell.xib; sourceTree = "<group>"; };
-		EB6E2D97193142F400ED6B18 /* CSDataStoreRemote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSDataStoreRemote.h; sourceTree = "<group>"; };
-		EB6E2D98193142F400ED6B18 /* CSDataStoreRemote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSDataStoreRemote.m; sourceTree = "<group>"; };
 		EB6E2D9B193142F400ED6B18 /* LoginRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginRegisterViewController.xib; sourceTree = "<group>"; };
 		EB6E2DA0193142F400ED6B18 /* CSProductCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSProductCell.xib; sourceTree = "<group>"; };
 		EB6E2DA3193142F400ED6B18 /* CSProductDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSProductDetailsViewController.xib; sourceTree = "<group>"; };
@@ -114,6 +109,7 @@
 		EB6E2DAC193142F400ED6B18 /* CSStatusCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSStatusCodes.h; sourceTree = "<group>"; };
 		EB6E2DAF193142F400ED6B18 /* UserAccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserAccountViewController.xib; sourceTree = "<group>"; };
 		EB6E2DC5193144C700ED6B18 /* Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		EB7F2BF11947AF010046C6A4 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		EB81EB3A1944BBEA003FBCCB /* SingleSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleSelectionViewController.swift; sourceTree = "<group>"; };
 		EB81EB3C1944BCC5003FBCCB /* SingleSelectionControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleSelectionControllerDelegate.swift; sourceTree = "<group>"; };
 		EB81EB3E1944BD3A003FBCCB /* SingleSelectionItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleSelectionItem.swift; sourceTree = "<group>"; };
@@ -140,6 +136,9 @@
 		EBF4C0C41943C2BE00AF4FB2 /* LoginRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRegisterViewController.swift; sourceTree = "<group>"; };
 		EBF4C0CE194467BA00AF4FB2 /* ProductsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsListViewController.swift; sourceTree = "<group>"; };
 		EBF4C0CF194467BA00AF4FB2 /* ProductsListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductsListViewController.xib; sourceTree = "<group>"; };
+		EBFCAB54194612F600A82A6F /* DataStoreLocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStoreLocal.swift; sourceTree = "<group>"; };
+		EBFCAB56194649C600A82A6F /* DataStoreRemote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStoreRemote.swift; sourceTree = "<group>"; };
+		EBFCAB581947832E00A82A6F /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -365,12 +364,9 @@
 		EB6E2DCD1931490700ED6B18 /* DataStore */ = {
 			isa = PBXGroup;
 			children = (
-				EB6E2D97193142F400ED6B18 /* CSDataStoreRemote.h */,
-				EB6E2D98193142F400ED6B18 /* CSDataStoreRemote.m */,
-				EB2004F21936690D006F3832 /* CSDataStoreLocal.h */,
-				EB2004F31936690D006F3832 /* CSDataStoreLocal.m */,
-				EB2004F519367667006F3832 /* CSDataStore.h */,
-				EB2004F619367667006F3832 /* CSDataStore.m */,
+				EBFCAB56194649C600A82A6F /* DataStoreRemote.swift */,
+				EBFCAB54194612F600A82A6F /* DataStoreLocal.swift */,
+				EBFCAB581947832E00A82A6F /* DataStore.swift */,
 			);
 			name = DataStore;
 			sourceTree = "<group>";
@@ -380,6 +376,7 @@
 			children = (
 				EB46958919448854003AA715 /* UserAccountViewController.swift */,
 				EB6E2DAF193142F400ED6B18 /* UserAccountViewController.xib */,
+				EB7F2BF11947AF010046C6A4 /* User.swift */,
 			);
 			name = UserAccount;
 			sourceTree = "<group>";
@@ -541,9 +538,9 @@
 				EB81EB491944DF2C003FBCCB /* CartViewController.swift in Sources */,
 				EBF4C0C31943B10A00AF4FB2 /* ProgressIndicator.swift in Sources */,
 				EBF4C0BF19438E3A00AF4FB2 /* ProductListViewController.swift in Sources */,
+				EBFCAB55194612F600A82A6F /* DataStoreLocal.swift in Sources */,
 				EB0A6B1D1945334D00B80BD0 /* DialogUtils.swift in Sources */,
 				EB46958A19448854003AA715 /* UserAccountViewController.swift in Sources */,
-				EB2004F41936690D006F3832 /* CSDataStoreLocal.m in Sources */,
 				EB430B281931414F0012B27E /* CSAppDelegate.m in Sources */,
 				EB81EB3B1944BBEA003FBCCB /* SingleSelectionViewController.swift in Sources */,
 				EB81EB3F1944BD3A003FBCCB /* SingleSelectionItem.swift in Sources */,
@@ -552,10 +549,9 @@
 				EB430B241931414F0012B27E /* main.m in Sources */,
 				EB81EB471944DCC0003FBCCB /* CartItemCell.swift in Sources */,
 				EB0A6B1F194535A200B80BD0 /* CurrencyManager.swift in Sources */,
-				EB6E2DB6193142F400ED6B18 /* CSDataStoreRemote.m in Sources */,
+				EBFCAB591947832E00A82A6F /* DataStore.swift in Sources */,
 				EBF4C0BB194363CE00AF4FB2 /* ProductDetailViewController.swift in Sources */,
 				EBD0B532194257F800E862C4 /* ProductCell.swift in Sources */,
-				EB2004F719367667006F3832 /* CSDataStore.m in Sources */,
 				EB4695881944800A003AA715 /* RegisterViewController.swift in Sources */,
 				EBF4C0BD1943691E00AF4FB2 /* ListViewControllerDelegate.swift in Sources */,
 				EB81EB451944DB2E003FBCCB /* CartQuantityItem.swift in Sources */,
@@ -564,7 +560,9 @@
 				EBD0B52E194232CE00E862C4 /* CartItem.swift in Sources */,
 				EB4CB59C1940ED9A0092457E /* Product.swift in Sources */,
 				EB81EB3D1944BCC5003FBCCB /* SingleSelectionControllerDelegate.swift in Sources */,
+				EBFCAB57194649C600A82A6F /* DataStoreRemote.swift in Sources */,
 				EBF4C0C119438F6700AF4FB2 /* BaseViewController.swift in Sources */,
+				EB7F2BF21947AF010046C6A4 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

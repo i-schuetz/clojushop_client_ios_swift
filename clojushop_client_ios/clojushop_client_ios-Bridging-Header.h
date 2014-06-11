@@ -3,5 +3,6 @@
 //
 
 #import "UIImageView+AFNetworking.h"
-#import "CSDataStore.h"
 #import "CSPaymentViewController.h"
+#import "AFHTTPRequestOperation.h"
+#import "AFHTTPRequestOperationManager.h"

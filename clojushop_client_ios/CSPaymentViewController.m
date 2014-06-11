@@ -8,7 +8,6 @@
 
 #import "CSPaymentViewController.h"
 #import "MBProgressHUD.h"
-#import "CSDataStore.h"
 #import <clojushop_client_ios-Swift.h>
 
 #define EXAMPLE_STRIPE_PUBLISHABLE_KEY @"pk_test_6pRNASCoBOKtIshFeQd4XMUh"
@@ -67,7 +66,8 @@
 - (void)hasToken:(STPToken *)token {
     NSLog(@"Received token %@", token.tokenId);
     
-    [[CSDataStore sharedDataStore] pay:token.tokenId value:[totalValue stringValue] currency:@"eur" successHandler:^{
+    //TODO test - it has not been tested after migration of DataStore to swift
+    [[DataStore sharedDataStore] pay:token.tokenId value:[totalValue stringValue] currency:@"eur" successHandler:^{
         
         //on payment success the cart is cleared in the server
         //we send notification to clear local cart
@@ -77,8 +77,10 @@
         
         [self.navigationController popViewControllerAnimated:YES];
 
-    } failureHandler:^{
+    } failureHandler:^BOOL(NSInteger statusCode) {
+        //TODO put this in the generic error handler
         [DialogUtils showAlert:@"Error" msg:@"Error ocurred processing payment"];
+        return true;
     }];
     
 //    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:@"https://example.com"]];

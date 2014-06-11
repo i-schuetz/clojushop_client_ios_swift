@@ -64,4 +64,13 @@ class CartItem {
     class func initWithDictHelper(dict: NSDictionary) -> CartItem {
         return CartItem(dict: dict)
     }
+    
+    class func createFromDictArray (dictArray: NSArray) -> Array<CartItem> {
+        var itemsArray:CartItem[] = []
+        
+        for dict: AnyObject in dictArray {
+            itemsArray += CartItem(dict: dict as NSDictionary)
+        }
+        return itemsArray
+    }
 }

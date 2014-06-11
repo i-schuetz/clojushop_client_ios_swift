@@ -120,15 +120,16 @@ class CartViewController: BaseViewController, UITableViewDataSource, UITableView
     func requestItems() {
         self.setProgressHidden(false, transparent: false)
         
-        CSDataStore.sharedDataStore().getCart(
+        DataStore.sharedDataStore().getCart(
             
-            {(items:AnyObject[]!) -> Void in
+            {(items:CartItem[]!) -> Void in
             
                 self.setProgressHidden(true, transparent: false)
-                self.onRetrievedItems(items as CartItem[])
+                self.onRetrievedItems(items)
             
-            }, failureHandler: {() -> Void in
+            }, failureHandler: {(Int) -> Bool in
                 self.setProgressHidden(true, transparent: false)
+                return false
                 
             }) //TODO shorthand for empty closure?
         
@@ -197,14 +198,14 @@ class CartViewController: BaseViewController, UITableViewDataSource, UITableView
         if editingStyle == UITableViewCellEditingStyle.Delete {
             let item:CartItem = items[indexPath.row]
             
-            CSDataStore.sharedDataStore().removeFromCart(item.id, successHandler: {() -> Void in
+            DataStore.sharedDataStore().removeFromCart(item.id, successHandler: {() -> Void in
                 
                 self.items.removeAtIndex(indexPath.row)
                 self.tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Fade)
                 
                 self.onModifyLocalCartContent()
                 
-                }, failureHandler: {() -> Void in }) //TODO shorthand for empty closure?
+                }, failureHandler: {(Int) -> Bool in return false}) //TODO shorthand for empty closure?
         }
     }
     
@@ -256,7 +257,7 @@ class CartViewController: BaseViewController, UITableViewDataSource, UITableView
         
         self.setProgressHidden(false, transparent:true)
         
-        CSDataStore.sharedDataStore().setCartQuantity(cartItem.id, quantity: cartItem.quantity,
+        DataStore.sharedDataStore().setCartQuantity(cartItem.id, quantity: cartItem.quantity,
             
             {() -> Void in
                 cartItem.quantity = quantity
@@ -267,7 +268,7 @@ class CartViewController: BaseViewController, UITableViewDataSource, UITableView
                 self.setProgressHidden(true, transparent:true)
                 
                 
-            }, failureHandler: {() -> Void in
+            }, failureHandler: {(Int) -> Bool in return false
                 self.setProgressHidden(true, transparent: true)
                 
             }) //TODO shorthand for empty closure?
