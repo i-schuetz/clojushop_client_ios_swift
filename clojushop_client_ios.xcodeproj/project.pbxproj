@@ -106,7 +106,6 @@
 		EB6E2DA0193142F400ED6B18 /* CSProductCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSProductCell.xib; sourceTree = "<group>"; };
 		EB6E2DA3193142F400ED6B18 /* CSProductDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSProductDetailsViewController.xib; sourceTree = "<group>"; };
 		EB6E2DAB193142F400ED6B18 /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
-		EB6E2DAC193142F400ED6B18 /* CSStatusCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSStatusCodes.h; sourceTree = "<group>"; };
 		EB6E2DAF193142F400ED6B18 /* UserAccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserAccountViewController.xib; sourceTree = "<group>"; };
 		EB6E2DC5193144C700ED6B18 /* Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
 		EB7F2BF11947AF010046C6A4 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -257,7 +256,6 @@
 				EB6E2DC71931482600ED6B18 /* ProductList */,
 				EBF4C0C019438F6700AF4FB2 /* BaseViewController.swift */,
 				EB30C6651934BA6C0039388F /* SingleSelection */,
-				EB6E2DAC193142F400ED6B18 /* CSStatusCodes.h */,
 				EB430B261931414F0012B27E /* CSAppDelegate.h */,
 				EB430B271931414F0012B27E /* CSAppDelegate.m */,
 				EB430B2C1931414F0012B27E /* Images.xcassets */,
