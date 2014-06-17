@@ -64,16 +64,14 @@ class ProductDetailViewController: BaseViewController, ListViewControllerDelegat
     }
     
     func showMaster() {
-        //TODO performSelector methods are not available in Swift - alternative?
+        //TODO (master visible on iPad, the first time)
 //        [self.navigationItem.leftBarButtonItem.target performSelector:self.navigationItem.leftBarButtonItem.action withObject:self.navigationItem];
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        //TODO there is a getter isPortrait in UIInterfaceOrientation extension, but it was not possible to use it, why?
         if UIInterfaceOrientation.Portrait == self.interfaceOrientation || UIInterfaceOrientation.PortraitUpsideDown == self.interfaceOrientation {
-            //If in portrait mode, display the master view the first time TODO add ipad check
             showMaster()
         }
             
@@ -88,6 +86,6 @@ class ProductDetailViewController: BaseViewController, ListViewControllerDelegat
         DataStore.sharedDataStore().addToCart(product.id, successHandler: {() -> Void in
             DialogUtils.showAlert("Success", msg: "Added!")
             
-            }, failureHandler: {(Int) -> Bool in return false}) //TODO shorthand for empty closure?
+            }, failureHandler: {(Int) -> Bool in return false})
     }
 }

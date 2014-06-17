@@ -47,7 +47,6 @@ class BaseViewController: UIViewController {
     }
     
     override func viewWillUnload() {
-        //TODO is this the correct callback for this?
         NSNotificationCenter.defaultCenter().removeObserver(self)
     }
     

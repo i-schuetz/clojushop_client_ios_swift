@@ -74,7 +74,7 @@ class ProductsListViewController: BaseViewController, UITableViewDataSource, UIT
         let product = products[indexPath.row]
         
         if !self.splitViewController {
-            let detailsViewController:ProductDetailViewController = ProductDetailViewController(nibName: "CSProductDetailsViewController", bundle: nil) //TODO rename nib. is it necessary to pass it?
+            let detailsViewController:ProductDetailViewController = ProductDetailViewController(nibName: "CSProductDetailsViewController", bundle: nil)
             
             detailsViewController.product = product
             detailsViewController.listViewController(product)

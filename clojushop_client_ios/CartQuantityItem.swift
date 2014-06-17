@@ -10,15 +10,14 @@ import Foundation
 
 class CartQuantityItem: SingleSelectionItem {
     
-    let quantity:String
+    let quantity:Int
     
-    init(quantity:String) {
+    init(quantity:Int) {
         self.quantity = quantity
     }
     
-    //TODO getter
     func getLabel() -> String {
-        return self.quantity
+        return String(self.quantity)
     }
     
     func getWrappedItem() -> AnyObject {

@@ -36,8 +36,7 @@ class DataStoreRemote {
     }
     
     
-    //TODO use enum for method
-    func request(method:Int, url:String, params:Dictionary<String, String>, requestSuccessHandler: (Dictionary<String, NSObject>) -> (), requestFailureHandler: (Int) -> Bool) {
+    func request(method:Int, url:String, params:Dictionary<String, AnyObject>, requestSuccessHandler: (Dictionary<String, NSObject>) -> (), requestFailureHandler: (Int) -> Bool) {
         
         /**
         * Give caller opportunity to handle the failure.
@@ -94,11 +93,11 @@ class DataStoreRemote {
         }
     }
     
-    func get(url:String, params:Dictionary<String, String>, requestSuccessHandler: (Dictionary<String, NSObject>) -> (), requestFailureHandler: (Int) -> Bool) {
+    func get(url:String, params:Dictionary<String, AnyObject>, requestSuccessHandler: (Dictionary<String, NSObject>) -> (), requestFailureHandler: (Int) -> Bool) {
         self.request(1, url: url, params: params, requestSuccessHandler: requestSuccessHandler, requestFailureHandler: requestFailureHandler)
     }
     
-    func post(url:String, params:Dictionary<String, String>, requestSuccessHandler: (Dictionary<String, NSObject>) -> (), requestFailureHandler: (Int) -> Bool) {
+    func post(url:String, params:Dictionary<String, AnyObject>, requestSuccessHandler: (Dictionary<String, NSObject>) -> (), requestFailureHandler: (Int) -> Bool) {
         self.request(2, url: url, params: params, requestSuccessHandler: requestSuccessHandler, requestFailureHandler: requestFailureHandler)
     }
     
@@ -106,12 +105,12 @@ class DataStoreRemote {
         var errorMsg = ""
         
         switch(statusCode) {
-            case 0, 2, 9 /* 9 is a local error -> wrong json format TODO */:
+            case 0, 2, 9 /* 9 is a local error -> wrong json format (TODO?) */:
                 errorMsg = "An unknown error ocurred. Please try again later."
             case 4:
                 errorMsg = "Not found."
             case 5:
-                errorMsg = "Validation error." //TODO process fields
+                errorMsg = "Validation error."
             case 3:
                 errorMsg = "User already exists."
             case 6:
@@ -131,7 +130,7 @@ class DataStoreRemote {
         DialogUtils.showAlert("Error", msg: errorMsg)
     }
     
-    func addScreenSize(params:Dictionary<String, String>) -> Dictionary<String, String> {
+    func addScreenSize(params:Dictionary<String, AnyObject>) -> Dictionary<String, AnyObject> {
         
         var paramsMutableCopy = params //this will create a mutable copy. We prefer this than inout parameter because it's cleaner fp
         
@@ -147,7 +146,7 @@ class DataStoreRemote {
     
     func getProducts(start: Int, size: Int, successHandler: (Dictionary<String, NSObject>) -> (), failureHandler: (Int) -> Bool) {
         let url:String = host + "/products"
-        var params: Dictionary<String, String> = ["st": start.description, "sz": size.description] //TODO what is correct way to convert to string?
+        var params: Dictionary<String, AnyObject> = ["st": String(start), "sz": String(size)]
         params = self.addScreenSize(params)
         
         self.get(url, params: params,
@@ -165,7 +164,7 @@ class DataStoreRemote {
     func getUser(successHandler: (Dictionary<String, NSObject>) -> (), failureHandler: (Int) -> Bool) {
         let url:String = host + "/user"
         
-        var params: Dictionary<String, String> = Dictionary<String, String>()
+        var params: Dictionary<String, AnyObject> = Dictionary<String, AnyObject>()
 
         self.get(url, params: params,
             requestSuccessHandler: {(response: Dictionary<String, NSObject>) -> () in
@@ -182,7 +181,7 @@ class DataStoreRemote {
     func logout(successHandler: () -> (), failureHandler: (Int) -> Bool)  {
         let url:String = host + "/user/logout"
 
-        self.get(url, params: Dictionary<String, String>(),
+        self.get(url, params: Dictionary<String, AnyObject>(),
             requestSuccessHandler: {(response: Dictionary<String, NSObject>) -> () in
                 successHandler()
             },
@@ -195,7 +194,7 @@ class DataStoreRemote {
     func login(userName: String, password:String, successHandler: () -> (), failureHandler: (Int) -> Bool)  {
         let url:String = host + "/user/login"
         
-        var params: Dictionary<String, String> = [
+        var params: Dictionary<String, AnyObject> = [
             "una": userName,
             "upw": password]
         
@@ -212,7 +211,7 @@ class DataStoreRemote {
     func register(userName: String, email:String, password:String, successHandler: () -> (), failureHandler: (Int) -> Bool)  {
         let url:String = host + "/user/register"
     
-        var params: Dictionary<String, String> = [
+        var params: Dictionary<String, AnyObject> = [
             "una": userName,
             "uem": email,
             "upw": password]
@@ -230,7 +229,7 @@ class DataStoreRemote {
     func addToCart(productId: String, successHandler: () -> (), failureHandler: (Int) -> Bool)  {
         let url:String = host + "/cart/add"
     
-        var params: Dictionary<String, String> = [
+        var params: Dictionary<String, AnyObject> = [
             "pid": productId
         ]
     
@@ -244,10 +243,10 @@ class DataStoreRemote {
         )
     }
 
-    func setCartQuantity(productId: String, quantity: String, successHandler: () -> (), failureHandler: (Int) -> Bool)  {
+    func setCartQuantity(productId: String, quantity: Int, successHandler: () -> (), failureHandler: (Int) -> Bool)  {
         let url:String = host + "/cart/quantity"
         
-        var params: Dictionary<String, String> = [
+        var params: Dictionary<String, AnyObject> = [
             "pid": productId,
             "qt": quantity
         ]
@@ -265,7 +264,7 @@ class DataStoreRemote {
     func removeFromCart(productId: String, successHandler: () -> (), failureHandler: (Int) -> Bool)  {
         let url:String = host + "/cart/remove"
         
-        var params: Dictionary<String, String> = [
+        var params: Dictionary<String, AnyObject> = [
             "pid": productId
         ]
         
@@ -283,7 +282,7 @@ class DataStoreRemote {
     func getCart(successHandler: (Dictionary<String, NSObject>) -> (), failureHandler: (Int) -> Bool)  {
         let url:String = host + "/cart"
         
-        var params: Dictionary<String, String> = Dictionary<String, String>()
+        var params: Dictionary<String, AnyObject> = Dictionary<String, AnyObject>()
         params = self.addScreenSize(params)
         
         self.get(url, params: params,
@@ -300,7 +299,7 @@ class DataStoreRemote {
     func pay(token: String, value: String, currency:String, successHandler: () -> (), failureHandler: (Int) -> Bool)  {
         let url:String = host + "/pay"
         
-        var params: Dictionary<String, String> = [
+        var params: Dictionary<String, AnyObject> = [
             "to": token,
             "v": value,
             "c": currency

@@ -48,7 +48,6 @@ class DataStoreLocal {
         }
     }
     
-    //TODO pass NSManagedObject[]
     func getProducts(start: Int, size: Int, successHandler: (products:AnyObject[]) -> (), failureHandler: () -> ()) {
         let request:NSFetchRequest = NSFetchRequest()
         

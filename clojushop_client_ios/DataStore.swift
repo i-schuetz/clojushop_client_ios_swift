@@ -116,7 +116,7 @@ class DataStore {
             })
     }
     
-    func setCartQuantity(productId: String, quantity: String, successHandler: () -> (), failureHandler: (Int) -> Bool)  {
+    func setCartQuantity(productId: String, quantity: Int, successHandler: () -> (), failureHandler: (Int) -> Bool)  {
         dataStoreRemote.setCartQuantity(productId, quantity: quantity,
             successHandler: {() -> () in
                 successHandler()},

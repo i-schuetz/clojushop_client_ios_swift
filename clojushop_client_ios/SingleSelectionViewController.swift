@@ -45,7 +45,7 @@ class SingleSelectionViewController: UITableViewController {
          //recycling temporarily disabled. for quantities view controller this is not very important, since we have only a few items
 //        var cell:UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as UITableViewCell
 //        
-//        if (cell == nil) { //TODO better way to do this check?
+//        if (cell == nil) {
             var cell = UITableViewCell(style:UITableViewCellStyle.Default, reuseIdentifier:cellIdentifier)
 //        }
         

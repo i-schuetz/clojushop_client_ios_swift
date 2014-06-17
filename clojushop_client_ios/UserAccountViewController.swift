@@ -41,7 +41,7 @@ class UserAccountViewController: BaseViewController {
                 self.nameField.text = user.name
                 self.emailField.text = user.email
 //
-            }, failureHandler: {(Int) -> Bool in return false}) //TODO shorthand for empty closure?
+            }, failureHandler: {(Int) -> Bool in return false})
     }
     
     func logout() {
@@ -52,7 +52,7 @@ class UserAccountViewController: BaseViewController {
 //                self.setProgressHidden(true)
                 self.replaceWithLoginRegisterTab()
             
-            }, failureHandler: {(Int) -> Bool in return false}) //TODO shorthand for empty closure?
+            }, failureHandler: {(Int) -> Bool in return false})
     }
     
     

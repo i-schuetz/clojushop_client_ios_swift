@@ -10,7 +10,7 @@ import Foundation
 
 class ProductListViewController: BaseViewController, UITableViewDataSource, UITableViewDelegate {
     
-    var products:Product[]!
+    var products:Product[] = []
     
     @IBOutlet var tableView:UITableView!
     
@@ -22,6 +22,8 @@ class ProductListViewController: BaseViewController, UITableViewDataSource, UITa
     }
     
     override func viewDidLoad() {
+        super.viewDidLoad();
+        
         let productCellNib:UINib = UINib(nibName: "CSProductCell", bundle: nil)
         tableView.registerNib(productCellNib, forCellReuseIdentifier: "CSProductCell")
         self.requestProducts()
@@ -32,7 +34,6 @@ class ProductListViewController: BaseViewController, UITableViewDataSource, UITa
         
         DataStore.sharedDataStore().getProducts(0, size: 4, successHandler:
             
-            //TODO add types in DataStore
             {(products:Product[]!) -> Void in
                 self.setProgressHidden(true)
                 self.onRetrievedProducts(products)
@@ -55,7 +56,7 @@ class ProductListViewController: BaseViewController, UITableViewDataSource, UITa
         let product = products[indexPath.row]
         
         if !self.splitViewController {
-            let detailsViewController:ProductDetailViewController = ProductDetailViewController(nibName: "CSProductDetailsViewController", bundle: nil) //TODO rename nib. is it necessary to pass it?
+            let detailsViewController:ProductDetailViewController = ProductDetailViewController(nibName: "CSProductDetailsViewController", bundle: nil)
             
             detailsViewController.product = product
             detailsViewController.listViewController(product)
@@ -82,7 +83,7 @@ class ProductListViewController: BaseViewController, UITableViewDataSource, UITa
         return cell
     }
     
-    func tableView(tableView:UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> NSInteger {
+    func tableView(tableView:UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> Double {
         return 133
     }
     

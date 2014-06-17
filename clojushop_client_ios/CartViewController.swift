@@ -60,10 +60,6 @@ class CartViewController: BaseViewController, UITableViewDataSource, UITableView
             
             self.showCartState(true)
             
-            //TODO why this didnt work with only nib - before there was view with children table and empty, empty never shows
-            //delete this?
-//            self.tableView.superview.superview.addSubview(self.emptyCartView)
-            
         } else {
             //TODO server calculates this
             //TODO multiple currencies
@@ -81,17 +77,14 @@ class CartViewController: BaseViewController, UITableViewDataSource, UITableView
 
 //TODO reduce
 //        ???
-//        return cartItems.reduce(0, combine:
-////            {(u:Double, c:CartItem) -> Double in u + (c.price * c.quantity))}
-//            {(u:Double, c:CartItem) -> Double in u + 1.0)}
-//
 //        why this doesn't compile "Could not find member 'price'", but it appears in autocompletion?
 //        return cartItems.reduce(0, combine: {$0 + ($1.price * $1.quantity)})
 //
         var total:Double = 0
         for cartItem in cartItems {
-            //TODO convert to double without NS class?
-            total = total + (NSString(string: cartItem.price).doubleValue * NSString(string: cartItem.quantity).doubleValue)
+            let price:Double = NSString(string: cartItem.price).doubleValue
+            let quantity:Double = Double(cartItem.quantity)
+            total = total + (price * quantity)
         }
         
         return total
@@ -129,13 +122,14 @@ class CartViewController: BaseViewController, UITableViewDataSource, UITableView
             
             }, failureHandler: {(Int) -> Bool in
                 self.setProgressHidden(true, transparent: false)
+                self.emptyCartView.hidden = false
+
                 return false
                 
-            }) //TODO shorthand for empty closure?
+            })
         
     }
     
-    //TODO implement this correctly...
     func adjustLayout() {
     
         self.navigationController.navigationBar.translucent = false;
@@ -177,9 +171,8 @@ class CartViewController: BaseViewController, UITableViewDataSource, UITableView
         
         cell.productPrice.text = CurrencyManager.sharedCurrencyManager().getFormattedPrice(item.price, currencyId: item.currency)
         
-        cell.quantityField.text = item.quantity
+        cell.quantityField.text = String(item.quantity)
         
-        //TODO clean interface
         cell.controller = self
         cell.tableView = self.tableView
         
@@ -205,14 +198,14 @@ class CartViewController: BaseViewController, UITableViewDataSource, UITableView
                 
                 self.onModifyLocalCartContent()
                 
-                }, failureHandler: {(Int) -> Bool in return false}) //TODO shorthand for empty closure?
+                }, failureHandler: {(Int) -> Bool in return false})
         }
     }
     
     func setQuantity(sender: AnyObject, atIndexPath ip:NSIndexPath) {
         let selectedCartItem:CartItem = items[ip.row]
         
-        let quantities = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"]
+        let quantities:Int[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
         
         let cartItemsForQuantitiesDialog:CartQuantityItem[] = self.wrapQuantityItemsForDialog(quantities)
         
@@ -235,13 +228,13 @@ class CartViewController: BaseViewController, UITableViewDataSource, UITableView
         self.presentModalViewController(selectQuantityController, animated: true)
     }
     
-    func wrapQuantityItemsForDialog(quantities: String[]) -> CartQuantityItem[] {
-        return quantities.map {(let q) -> CartQuantityItem in CartQuantityItem(quantity: q)} //TODO shorthand?
+    func wrapQuantityItemsForDialog(quantities: Int[]) -> CartQuantityItem[] {
+        return quantities.map {(let q) -> CartQuantityItem in CartQuantityItem(quantity: q)}
     }
 
     
     @IBAction func onBuyPress(sender: UIButton) {
-        let paymentViewController:CSPaymentViewController = CSPaymentViewController(nibName:"CSPaymentViewController", bundle:nil)
+        let paymentViewController:PaymentViewController = PaymentViewController(nibName:"CSPaymentViewController", bundle:nil)
         paymentViewController.totalValue = self.getTotalPrice(items)
         
 //        TODO
@@ -253,13 +246,14 @@ class CartViewController: BaseViewController, UITableViewDataSource, UITableView
     func selectedItem(item: SingleSelectionItem, baseObject:AnyObject) {
         var cartItem = baseObject as CartItem //TODO use generics
         
-        let quantity:String = item.getWrappedItem() as String //TODO use generics
+        let quantity:Int = item.getWrappedItem() as Int //TODO use generics
         
         self.setProgressHidden(false, transparent:true)
         
-        DataStore.sharedDataStore().setCartQuantity(cartItem.id, quantity: cartItem.quantity,
+        DataStore.sharedDataStore().setCartQuantity(cartItem.id, quantity: quantity,
             
             {() -> Void in
+                
                 cartItem.quantity = quantity
                 self.tableView.reloadData()
                 
@@ -271,7 +265,7 @@ class CartViewController: BaseViewController, UITableViewDataSource, UITableView
             }, failureHandler: {(Int) -> Bool in return false
                 self.setProgressHidden(true, transparent: true)
                 
-            }) //TODO shorthand for empty closure?
+            })
     }
 
 }

@@ -52,7 +52,9 @@ class LoginRegisterViewController:BaseViewController {
             self.setProgressHidden(true)
             self.replaceWithAccountTab()
             
-            }, failureHandler: {(Int) -> Bool in return false}) //TODO shorthand for empty closure?
+            }, failureHandler: {(Int) -> Bool in
+                self.setProgressHidden(true)
+                return false})
     }
     
     @IBAction func register(sender: UIButton) {
@@ -61,7 +63,6 @@ class LoginRegisterViewController:BaseViewController {
     }
         
     func replaceWithAccountTab() {
-//        let accountController: CSUserAccountViewController = CSUserAccountViewController(nibName: CSUserAccountViewController) //TODO nib necessary here?
         let accountController: UserAccountViewController = UserAccountViewController(nibName: "UserAccountViewController", bundle: nil)
         self.navigationController.tabBarItem.title = "User account"
         self.navigationController.pushViewController(accountController, animated: true)

@@ -3,6 +3,7 @@
 //
 
 #import "UIImageView+AFNetworking.h"
-#import "CSPaymentViewController.h"
 #import "AFHTTPRequestOperation.h"
 #import "AFHTTPRequestOperationManager.h"
+#import "MBProgressHUD.h"
+#import "STPView.h"
