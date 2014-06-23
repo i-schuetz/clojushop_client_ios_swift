@@ -1,6 +1,5 @@
 //
 //  CartItemCell.swift
-//  clojushop_client_ios
 //
 //  Created by ischuetz on 08/06/2014.
 //  Copyright (c) 2014 ivanschuetz. All rights reserved.

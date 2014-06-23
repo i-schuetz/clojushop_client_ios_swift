@@ -18,7 +18,7 @@ class ProductListViewController: BaseViewController, UITableViewDataSource, UITa
     
     init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: NSBundle!) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        self.title = "Clojushop client"
+        self.title = "Rest client"
     }
     
     override func viewDidLoad() {
